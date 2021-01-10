@@ -1,0 +1,24 @@
+.Jumbotron {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/jumbotronImg.jpg?alt=media&token=60a5a05b-c02b-4f76-a52e-fb462b3c9907") center/cover no-repeat border-box, #eee;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    height: 90vh;
+    position: relative;
+}
+
+.Text {
+    color: white;
+    left: 3rem;
+    position: absolute;
+    top: 8rem;
+    width: 40%;
+}
+
+.Text h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.Text p {
+    font-size: 1.5rem;
+}

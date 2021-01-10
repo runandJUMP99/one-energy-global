@@ -1,0 +1,7 @@
+.Founders {
+    background: url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/spikes.png?alt=media&token=87c94c00-43f7-4430-94d3-856a218a2c1b");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem 0;
+}
