@@ -1,0 +1,20 @@
+.Director {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.Director h3 {
+    margin: 1rem 0 0;
+}
+
+.Director p {
+    margin: 0.5rem 0;
+}
+
+.Divider {
+    background: #db6400;
+    height: 0.5rem;
+    width: 4.5rem;
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import {NavLink} from "react-router-dom"
 
 import classes from "./Link.module.css";
 
-const Link = ({name}) => {
+const Link = ({name, path}) => {
     return (
         <li className={classes.Link}>
-            {name}
+            <NavLink to={path}>{name}</NavLink>
         </li>
     );
 }

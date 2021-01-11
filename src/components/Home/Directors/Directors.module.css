@@ -1,0 +1,16 @@
+.Directors {
+    background: #16697a;
+    color: white;
+    padding: 4rem;
+}
+
+.Directors h1 {
+    text-align: center;
+}
+
+.DirectorsGroup {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

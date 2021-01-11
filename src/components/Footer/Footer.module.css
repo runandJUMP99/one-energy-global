@@ -1,0 +1,10 @@
+.Footer {
+    padding: 4rem 2rem 0;
+}
+
+.MainContent {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
