@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar fixed={true} />
+      <Navbar fixed={false} />
       <Suspense fallback="Loading...">
         <Switch>
           <Route path="/" exact component={Home} />

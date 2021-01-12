@@ -54,7 +54,7 @@ const Contact  = () => {
 
     return (
         <div className={classes.Contact}>
-            <Typography variant="h6" gutterBottom>Enter Your Shipping Information</Typography>
+            <Typography variant="h6" gutterBottom>Enter Your Contact Information</Typography>
             <FormProvider {...methods}>
                 <form onSubmit={methods.handleSubmit((data) => handleSubmit(data))}>
                     <Grid container spacing={3}>

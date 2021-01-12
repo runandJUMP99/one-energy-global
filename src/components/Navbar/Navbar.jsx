@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {useLocation} from "react-router-dom";
 
 import Links from "./Links/Links";
 import Logo from "../UI/Logo/Logo";
@@ -8,15 +7,14 @@ import classes from "./Navbar.module.css";
 
 const Navbar = ({fixed}) => {
     const [styles, setStyles] = useState(null);
-    const location = useLocation();
 
     useEffect(() => {
         if (fixed) {
             window.addEventListener("scroll", () => {
                 const currentScrollPos = window.pageYOffset;
                 let visible = currentScrollPos > 525;
-                
-                if (visible || location.pathname !== "/") {
+
+                if (visible) {
                     setStyles({
                         transform: "translateY(0)"
                     });
@@ -35,7 +33,6 @@ const Navbar = ({fixed}) => {
             });
         }
     }, [fixed]);
-
 
     return (
         <div className={classes.Navbar} style={styles}>

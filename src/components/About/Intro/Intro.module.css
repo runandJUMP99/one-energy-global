@@ -1,6 +1,6 @@
 .Intro {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
-    url("https://cdn.pixabay.com/photo/2015/01/09/11/09/startup-594091_960_720.jpg") 40%/cover no-repeat border-box;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
+    url("https://cdn.pixabay.com/photo/2015/03/09/15/55/bike-665925__340.jpg") 40%/cover no-repeat border-box;
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
     color: white;
     margin: auto;
@@ -11,11 +11,13 @@
 
 .Intro h1 {
     font-size: 2.25rem;
+    margin: 1rem auto;
+    width: 60%;
 }
 
 .Intro p {
     font-size: 1.25rem;
     line-height: 2;
     margin: auto;
-    width: 70%;
+    width: 50%;
 }

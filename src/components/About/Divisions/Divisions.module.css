@@ -1,0 +1,9 @@
+.Divisions {
+    align-self: stretch;
+    /* background: url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/folk-pattern.png?alt=media&token=9201fc03-c4e8-4f96-8b90-2f606fd8d8e3"); */
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: 1000px;
+    width: 90%;
+}

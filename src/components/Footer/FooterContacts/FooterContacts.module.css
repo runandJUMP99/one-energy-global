@@ -10,6 +10,7 @@
     text-decoration: none;
 }
 
+.ContactUs p,
 .ContactUs a {
     align-items: center;
     color: inherit;
