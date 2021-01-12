@@ -1,3 +1,14 @@
 .FooterBottom {
+    margin-bottom: 0;
+    margin-top: 2rem;
     text-align: center;
+}
+
+.FooterBottom a {
+    color: #db6400;
+    text-decoration: none;
+}
+
+.FooterBottom a:hover {
+    color: #f77a14;
 }

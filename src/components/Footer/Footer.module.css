@@ -1,10 +1,21 @@
 .Footer {
-    padding: 4rem 2rem 0;
+    background: #f8f1f1;
+    box-shadow: 0 -1px 4px 1px rgba(0, 0, 0, 0.5);
+    padding: 3rem 2rem 1rem;
+}
+
+.Footer h3 {
+    margin-top: 0;
+}
+
+.Footer a:hover {
+    color: #666565;
 }
 
 .MainContent {
-    align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
+    margin: auto;
+    max-width: 1300px;
+    padding: 1rem;
 }

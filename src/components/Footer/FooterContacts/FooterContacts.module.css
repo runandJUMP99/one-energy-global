@@ -1,0 +1,34 @@
+.FooterContacts h3 {
+    margin-bottom: 1rem;
+}
+
+.FooterContacts p {
+    margin: 1rem 0;
+}
+
+.FooterContacts a {
+    text-decoration: none;
+}
+
+.ContactUs a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+}
+
+.ContactUs svg {
+    margin-right: 0.25rem;
+}
+
+.SocialLinks {
+    display: flex;
+}
+
+.SocialLinks p {
+    margin: 0;
+}
+
+.SocialLinks a {
+    color: inherit;
+    margin-right: 0.5rem;
+}

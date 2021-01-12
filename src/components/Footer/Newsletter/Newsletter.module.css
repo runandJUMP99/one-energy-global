@@ -1,0 +1,15 @@
+.Newsletter {
+    width: 40%;
+}
+
+.Newsletter input {
+    padding: 0.5rem;
+}
+
+.Newsletter button {
+    background: #16697a;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
