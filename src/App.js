@@ -12,7 +12,7 @@ import Projects from "./components/Projects/Projects";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar fixed={true} />
       <Suspense fallback="Loading...">
         <Switch>
           <Route path="/" exact component={Home} />

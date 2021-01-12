@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
 
 import classes from "./Newsletter.module.css";
 

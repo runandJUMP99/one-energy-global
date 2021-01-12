@@ -1,16 +1,15 @@
 .Jumbotron {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/jumbotronImg.jpg?alt=media&token=60a5a05b-c02b-4f76-a52e-fb462b3c9907") center/cover no-repeat border-box, #eee;
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
     height: 90vh;
-    position: relative;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+    width: 90%;
 }
 
 .Text {
-    color: white;
-    left: 3rem;
-    position: absolute;
-    top: 30%;
+    color: #16697a;
     width: 40%;
 }
 
@@ -21,4 +20,58 @@
 
 .Text p {
     font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.ImageGroup {
+    position: relative;
+    width: 55%;
+}
+
+.ImageContainer {
+    border-radius: 35% 20% 30% 35%/25% 40% 25% 20%;
+    height: 25rem;
+    overflow: hidden;
+    transform: rotate(20deg);
+    width: 100%;
+}
+
+.ImageContainer img {
+    bottom: 2rem;
+    position: relative;
+    right: 17rem;
+    transform: rotate(-20deg);
+}
+
+.Big {
+    background: #3eb0c7;
+    border-radius: 50% 40% 45% 40%/ 40% 35% 50% 45%;
+    height: 30rem;
+    left: -2rem;
+    position: absolute;
+    top: -3rem;
+    transform: rotate(-10deg);
+    width: 110%;
+    z-index: -1;
+}
+
+.Medium {
+    background: #fca45c;
+    border-radius: 50%;
+    bottom: -2rem;
+    height: 10rem;
+    left: 4rem;
+    position: absolute;
+    transform: rotate(25deg);
+    width: 6rem;
+}
+
+.Small {
+    background: salmon;
+    border-radius: 50%;
+    height: 6rem;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 6rem;
 }

@@ -4,5 +4,10 @@
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    transform: translateY(-5rem);
+    transition: all 0.25s ease-out;
+    width: 100%;
+    z-index: 10;
 }

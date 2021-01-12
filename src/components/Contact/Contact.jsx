@@ -3,6 +3,8 @@ import {useForm, FormProvider} from "react-hook-form";
 
 import {Grid, Typography} from "@material-ui/core";
 
+import CTAButton from "../UI/CTAButton/CTAButton";
+
 // import ReCAPTCHA from "react-google-recaptcha";
 // import emailjs from "emailjs-com";
 
@@ -61,7 +63,7 @@ const Contact  = () => {
                         <Input required name="phone" label="Phone Number" size={12} variant="filled" />
                         <Input required name="message" label="Message" multiline={true} size={12} variant="filled" />
                     </Grid>
-                    <button>Send</button>
+                    <CTAButton>Send</CTAButton>
                 </form>
             </FormProvider>
         </div>

@@ -1,11 +1,13 @@
 import React from "react";
 
+import Intro from "./Intro/Intro";
+
 import classes from "./Projects.module.css";
 
 const Projects = () => {
     return (
         <div className={classes.Projects}>
-            Proejcts
+            <Intro />
         </div>
     );
 }

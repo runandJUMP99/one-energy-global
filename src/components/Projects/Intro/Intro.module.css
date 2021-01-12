@@ -1,0 +1,15 @@
+.Intro {
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+.Intro img {
+    width: 40%;
+}
+
+.Text {
+    width: 50%;
+}
