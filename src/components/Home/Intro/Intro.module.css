@@ -4,9 +4,6 @@
 }
 
 .IntroContent {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin: auto;
     max-width: 1300px;
     width: 90%;
@@ -15,19 +12,39 @@
 .IntroContent img {
     border-radius: 16px;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
-    width: 40%;
+    width: 90%;
 }
 
 .Text {
-    width: 45%;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 90%;
 }
 
 .Text h2 {
     color: #ff8f32;
+    margin-top: 0;
 }
 
 .Text p {
     color: white;
     font-size: 1.1rem;
     line-height: 2;
+}
+
+@media (min-width: 850px) {
+    .IntroContent {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .IntroContent img {
+        width: 40%;
+    }
+
+    .Text {
+        text-align: left;
+        width: 45%;
+    }
 }

@@ -2,10 +2,11 @@ import React, {useEffect, useState} from "react";
 
 import Links from "./Links/Links";
 import Logo from "../UI/Logo/Logo";
+import ToggleButton from "../UI/ToggleButton/ToggleButton";
 
 import classes from "./Navbar.module.css";
 
-const Navbar = ({fixed}) => {
+const Navbar = ({fixed, handleShow}) => {
     const [styles, setStyles] = useState(null);
 
     useEffect(() => {
@@ -37,7 +38,10 @@ const Navbar = ({fixed}) => {
     return (
         <div className={classes.Navbar} style={styles}>
             <Logo />
-            <Links />
+            <nav>
+                <Links />
+            </nav>
+            <ToggleButton handleShow={handleShow} />
         </div>
     );
 }

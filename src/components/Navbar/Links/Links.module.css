@@ -1,7 +1,12 @@
 .Links {
-    align-items: center;
-    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@media (min-width: 850px) {
+    .Links {
+        align-items: center;
+        display: flex;
+    }
 }

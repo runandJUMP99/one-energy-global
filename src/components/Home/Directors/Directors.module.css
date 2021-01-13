@@ -1,7 +1,7 @@
 .Directors {
     background: #16697a;
     color: white;
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .Directors h1 {
@@ -12,5 +12,10 @@
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+@media (min-width: 420px) {
+    .DirectorsGroup {
+        justify-content: center;
+    }
 }
