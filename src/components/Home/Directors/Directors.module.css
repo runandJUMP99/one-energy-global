@@ -5,17 +5,20 @@
 }
 
 .Directors h1 {
+    margin-bottom: 3.5rem;
     text-align: center;
 }
 
 .DirectorsGroup {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1000px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 500px) {
     .DirectorsGroup {
-        justify-content: center;
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

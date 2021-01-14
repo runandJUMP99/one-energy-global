@@ -12,8 +12,10 @@ const Footer = () => {
         <div className={classes.Footer}>
             <div className={classes.MainContent}>
                 <Newsletter />
-                <FooterContacts />
-                <FooterLinks />
+                <div className={classes.MainContentBottom}>
+                    <FooterContacts />
+                    <FooterLinks />
+                </div>
             </div>
             <FooterBottom />
         </div>

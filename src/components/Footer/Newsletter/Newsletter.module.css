@@ -1,9 +1,11 @@
 .Newsletter {
-    width: 35%;
+    /* width: 35%; */
+    text-align: center;
 }
 
 .Newsletter input {
     padding: 0.5rem;
+    width: 100%;
 }
 
 .Newsletter button {
@@ -11,5 +13,6 @@
     border: none;
     color: white;
     margin-left: 0.5rem;
+    margin-top: 0.5rem;
     padding: 0.5rem;
 }

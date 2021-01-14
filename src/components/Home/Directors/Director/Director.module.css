@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 2rem;
+    text-align: center;
 }
 
 .Director h3 {
@@ -16,5 +17,16 @@
 .Divider {
     background: #ff8f32;
     height: 0.5rem;
+    margin: auto;
     width: 4.5rem;
+}
+
+@media (min-width: 500px) {
+    .Director {
+        text-align: initial;
+    }
+
+    .Divider {
+        margin: initial;
+    }
 }

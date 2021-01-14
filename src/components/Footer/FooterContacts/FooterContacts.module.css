@@ -1,12 +1,19 @@
+.FooterContacts {
+    margin: 2rem auto;
+    text-align: center;
+}
+
 .FooterContacts h3 {
     margin-bottom: 1rem;
 }
 
 .FooterContacts p {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    text-align: center;
 }
 
 .FooterContacts a {
+    margin: auto;
     text-decoration: none;
 }
 
@@ -14,7 +21,7 @@
 .ContactUs a {
     align-items: center;
     color: inherit;
-    display: flex;
+    /* display: flex; */
 }
 
 .ContactUs svg {
@@ -23,6 +30,7 @@
 
 .SocialLinks {
     display: flex;
+    justify-content: center;
 }
 
 .SocialLinks p {
