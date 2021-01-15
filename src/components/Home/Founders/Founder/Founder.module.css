@@ -23,6 +23,26 @@
 .Founder p {
     line-height: 1.5;
     margin-bottom: 0.25rem; 
+    margin-top: 0;
+}
+
+.SocialLinks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.SocialLinks p {
+    margin: 0;
+}
+
+.SocialLinks a {
+    color: inherit;
+    margin-right: 0.5rem;
+}
+
+.SocialLinks a:hover {
+    color: #eee;
 }
 
 @media(min-width: 500px) {

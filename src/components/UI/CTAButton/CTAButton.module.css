@@ -1,18 +1,25 @@
 .CTAButton {
-    background: #ff8f32;
-    border-radius: 32px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    background: none;
     border: none;
-    color: #16697a;
+    color: #0e5664;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
     margin: 0.5rem auto;
+    padding: none;
+}
+
+.CTAButton a {
+    background: #ff8f32;
+    border-radius: 32px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    color: inherit;
     padding: 0.75rem 1.5rem;
+    text-decoration: none;
     transition: all 0.25s ease-out;
 }
 
-.CTAButton:hover {
+.CTAButton a:hover {
     background: #16697a;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
     color: #ff8f32;

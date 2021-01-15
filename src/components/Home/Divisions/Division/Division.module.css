@@ -1,0 +1,34 @@
+.Division {
+    background: white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    width: 20rem;
+}
+
+.Division a {
+    color: initial;
+    text-decoration: none;
+}
+
+.Division:hover {
+    background: #eee;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1rem);
+}
+
+.Division img {
+    width: 40%;
+}
+
+.Division h3 {
+    color: #16697a;
+}
+
+.Division p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}

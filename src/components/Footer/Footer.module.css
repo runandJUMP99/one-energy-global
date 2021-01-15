@@ -13,14 +13,31 @@
 }
 
 .MainContent {
-    /* display: flex;
-    justify-content: space-between; */
     margin: auto;
-    max-width: 1300px;
+    max-width: 1000px;
+}
+
+@media (min-width: 500px) {
+    .MainContentBottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem auto;
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 850px) {
     .Footer {
         padding: 3rem 2rem 1rem;
+    }
+
+    .MainContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .MainContentBottom {
+        margin: 2rem 0;
+        width: 60%;
     }
 }

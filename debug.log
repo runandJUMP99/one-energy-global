@@ -4,3 +4,13 @@
 [0112/164403.769:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [0113/180752.508:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\steve\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\5b634cd3-7f9c-4710-b4b2-9225e2e12cfc: The system cannot find the path specified. (0x3)
 [0113/180752.520:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0113/211741.110:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0114/170209.060:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0114/180556.938:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/180556.938:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/182752.805:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/183602.447:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\steve\AppData\Local\Google\Chrome\User Data\Crashpad\reports\9b92a4b5-0a81-4ed0-a10d-2314038f9bc9.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0114/185753.902:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/185754.170:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/185754.300:ERROR:process_info.cc(359)] UncheckedAllocate
+[0114/185754.386:ERROR:process_info.cc(359)] UncheckedAllocate

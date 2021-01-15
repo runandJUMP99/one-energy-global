@@ -16,7 +16,7 @@ const Newsletter = () => {
 
     return (
         <div className={classes.Newsletter}>
-            <h3>Sign up to our mailing list to receive updates on our newest items!</h3>
+            <h3>Sign up to our mailing list to receive updates on our latest projects!</h3>
             <MailchimpSubscribe 
                 // url={process.env.REACT_APP_MAILCHIMP_URL}
                 render={({ subscribe, status, message }) => (

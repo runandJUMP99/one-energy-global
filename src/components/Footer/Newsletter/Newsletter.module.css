@@ -1,5 +1,6 @@
 .Newsletter {
-    /* width: 35%; */
+    margin: auto;
+    max-width: 500px;
     text-align: center;
 }
 
@@ -11,8 +12,37 @@
 .Newsletter button {
     background: #16697a;
     border: none;
+    border-radius: 2px;
     color: white;
-    margin-left: 0.5rem;
+    cursor: pointer;
     margin-top: 0.5rem;
     padding: 0.5rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.Newsletter button:hover {
+    background: #21889c;
+}
+
+@media(min-width: 850px) {
+    .Newsletter {
+        margin: 2rem 0;
+        text-align: left;
+        width: 35%;
+    }
+
+    .Newsletter form {
+        align-items: stretch;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Newsletter input {
+        width: 65%;
+    }
+
+    .Newsletter button {
+        margin-top: 0;
+        width: 30%;
+    }
 }

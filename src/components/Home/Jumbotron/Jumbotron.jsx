@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 import CTAButton from "../../UI/CTAButton/CTAButton";
 
@@ -10,7 +11,10 @@ const Jumbotron = () => {
             <div className={classes.Text}>
                 <h1>Making Wellness Simple</h1>
                 <p>Advancing communities across the globe one community at a time</p>
-                <CTAButton>Learn More</CTAButton>
+                <div className={classes.Buttons}>
+                    <button className={classes.LearnMore}><NavLink to="/about">Learn More</NavLink></button>
+                    <CTAButton path="/getinvolved">Get Involved</CTAButton>
+                </div>
             </div>
             <div className={classes.ImageGroup}>
                 <div className={classes.ImageContainer}>

@@ -63,7 +63,7 @@ const Contact  = () => {
                         <Input required name="phone" label="Phone Number" size={12} variant="filled" />
                         <Input required name="message" label="Message" multiline={true} size={12} variant="filled" />
                     </Grid>
-                    <CTAButton>Send</CTAButton>
+                    <button>Send</button>
                 </form>
             </FormProvider>
         </div>

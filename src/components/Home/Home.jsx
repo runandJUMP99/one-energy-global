@@ -1,6 +1,7 @@
 import React from "react";
 
 import Directors from "./Directors/Directors";
+import Divisions from "./Divisions/Divisions";
 import Founders from "./Founders/Founders";
 import Intro from "./Intro/Intro";
 import Jumbotron from "./Jumbotron/Jumbotron";
@@ -12,6 +13,7 @@ const Home = () => {
         <div className={classes.Home}>
             <Jumbotron />
             <Intro />
+            <Divisions />
             <Founders />
             <Directors />
         </div>

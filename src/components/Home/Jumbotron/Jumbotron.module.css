@@ -26,6 +26,35 @@
     opacity: 0.7;
 }
 
+.Buttons {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.LearnMore {
+    background: none;
+    border: none;
+    padding: none;
+}
+
+.LearnMore a {
+    border: 2px solid #ff8f32;
+    border-radius: 32px;
+    color: #ff8f32;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+.LearnMore a:hover {
+    background: #ff8f32;
+    color: white;
+}
+
 .ImageGroup {
     position: relative;
     width: 100%;
@@ -119,6 +148,10 @@
     .Text {
         text-align: left;
         width: 40%;
+    }
+
+    .Buttons {
+        justify-content: initial;
     }
 
     .ImageGroup {

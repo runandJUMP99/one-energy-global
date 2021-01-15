@@ -1,5 +1,5 @@
 .FooterContacts {
-    margin: 2rem auto;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -7,13 +7,7 @@
     margin-bottom: 1rem;
 }
 
-.FooterContacts p {
-    margin: 1rem auto;
-    text-align: center;
-}
-
 .FooterContacts a {
-    margin: auto;
     text-decoration: none;
 }
 
@@ -21,7 +15,8 @@
 .ContactUs a {
     align-items: center;
     color: inherit;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
 }
 
 .ContactUs svg {
@@ -40,4 +35,20 @@
 .SocialLinks a {
     color: inherit;
     margin-right: 0.5rem;
+}
+
+@media (min-width: 500px) {
+    .FooterContacts {
+        margin: 0;
+        text-align: left;
+    }
+
+    .ContactUs p,
+    .ContactUs a {
+        justify-content: initial;
+    }
+
+    .SocialLinks {
+        justify-content: initial;
+    }
 }
