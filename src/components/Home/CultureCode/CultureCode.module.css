@@ -1,0 +1,33 @@
+.CultureCode {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.CultureCode img {
+    position: relative;
+    right: 2rem;
+    top: 4rem;
+    width: 40%;
+}
+
+.Text {
+    background: white;
+    border-radius: 4px;
+    border-right: 4px solid #f58a8a;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    color: #16697a;
+    left: 4rem;
+    padding: 2rem;
+    position: relative;
+    width: 40%;
+    z-index: 5;
+}
+
+.Text h2 {
+    color: #08b7db
+}
+
+.Text p {
+    line-height: 1.8;
+}

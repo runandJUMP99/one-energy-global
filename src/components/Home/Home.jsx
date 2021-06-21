@@ -1,10 +1,12 @@
 import React from "react";
 
+import CultureCode from "./CultureCode/CultureCode";
 import Directors from "./Directors/Directors";
-import Divisions from "./Divisions/Divisions";
-import Founders from "./Founders/Founders";
 import Intro from "./Intro/Intro";
+import Investment from "./Investment/Investment";
 import Jumbotron from "./Jumbotron/Jumbotron";
+import SocialResp from "./SocialResp/SocialResp";
+import Volunteer from "./Volunteer/Volunteer";
 
 import classes from "./Home.module.css";
 
@@ -13,8 +15,10 @@ const Home = () => {
         <div className={classes.Home}>
             <Jumbotron />
             <Intro />
-            <Divisions />
-            <Founders />
+            <CultureCode />
+            <SocialResp />
+            <Volunteer />
+            <Investment />
             <Directors />
         </div>
     );

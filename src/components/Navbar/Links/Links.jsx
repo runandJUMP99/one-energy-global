@@ -10,9 +10,10 @@ const Links = () => {
         <ul className={classes.Links}>
             <Link name="Home" path="/" />
             <Link name="About" path="/about" />
-            <Link name="Projects" path="/projects" />
+            <Link name="Volunteer" path="/volunteer" />
+            <Link name="Membership" path="/membership" />
             <Link name="Contact" path="/contact" />
-            <CTAButton path="/getinvolved">Get Involved</CTAButton>
+            <CTAButton path="/donate">Sow A Seed</CTAButton>
         </ul>
     );
 }

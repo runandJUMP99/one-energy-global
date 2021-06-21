@@ -20,9 +20,9 @@ const Navbar = ({fixed, handleShow}) => {
                         transform: "translateY(0)"
                     });
                 } else {
-                    setStyles({
-                        transform: "translateY(-5rem)"
-                    });
+                    // setStyles({
+                    //     transform: "translateY(-8rem)"
+                    // });
                 }
             });
         } else {
