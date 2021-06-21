@@ -1,4 +1,6 @@
 .Divider {
-    border-bottom: 2px solid #f58a8a;
-    border-top: 2px solid #f58a8a;
+    border-bottom: 1px solid var(--cta);
+    border-top: 1px solid var(--cta);
+    padding: 0.1rem 0;
+    width: 30%;
 }

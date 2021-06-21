@@ -1,21 +1,19 @@
 .Intro {
-    background: #16697a;
     padding: 4rem 0;
     text-align: center;
 }
 
 .Intro img {
     border-radius: 16px;
-    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
     width: 90%;
 }
 
 .Intro h2 {
-    color: #ff8f32;
+    color: var(--cta);
 }
 
 .Intro p {
-    color: white;
     font-size: 1.1rem;
     line-height: 2;
 }

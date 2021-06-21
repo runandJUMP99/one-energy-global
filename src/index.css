@@ -1,3 +1,12 @@
+:root {
+  --background-dark: #16697a;
+  --cta: #f58a8a;
+  --cta-hover: #fcb0b0;
+  --highlight: #08b7db;
+  --secondary-text: 1.25rem;
+  --text: #16697a;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,10 +24,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
-/* COLORS
-16697a - background
-db6400 - borders/buttons
-ff8f32 - links/buttons
-f8f1f1 - nav */

@@ -16,7 +16,7 @@
 }
 
 .Divider {
-    background: #ff8f32;
+    background: var(--cta);
     height: 0.5rem;
     margin: auto;
     width: 4.5rem;

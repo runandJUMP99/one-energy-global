@@ -5,6 +5,7 @@
 }
 
 .SocialResp img {
+    border-radius: 4px;
     bottom: 4rem;
     left: 2rem;
     position: relative;
@@ -13,10 +14,10 @@
 
 .Text {
     background: white;
-    border-left: 4px solid #f58a8a;
+    border-left: 4px solid var(--cta);
     border-radius: 4px;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
-    color: #16697a;
+    color: var(--text);
     padding: 2rem;
     position: relative;
     right: 4rem;
@@ -26,7 +27,7 @@
 }
 
 .Text h2 {
-    color: #08b7db
+    color: var(--highlight);
 }
 
 .Text p {

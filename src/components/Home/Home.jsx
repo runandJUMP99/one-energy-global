@@ -1,10 +1,12 @@
 import React from "react";
 
+import CTASection from "../Global/CTASection/CTASection";
 import CultureCode from "./CultureCode/CultureCode";
 import Directors from "./Directors/Directors";
 import Intro from "./Intro/Intro";
 import Investment from "./Investment/Investment";
 import Jumbotron from "./Jumbotron/Jumbotron";
+import Newsletter from "../Global/Newsletter/Newsletter";
 import SocialResp from "./SocialResp/SocialResp";
 import Volunteer from "./Volunteer/Volunteer";
 
@@ -20,6 +22,8 @@ const Home = () => {
             <Volunteer />
             <Investment />
             <Directors />
+            <CTASection />
+            <Newsletter />
         </div>
     );
 }

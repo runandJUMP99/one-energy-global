@@ -9,11 +9,10 @@ const Directors = () => {
         <div className={classes.Directors}>
             <h1>Board of Directors</h1>
             <div className={classes.DirectorsGroup}>
-                <Director name="Nasaiah Hopkins" title="Executive Chairman" />
-                <Director name="Caleb Duah" title="President" />
+                <Director name="Nasaiah Hopkins" title="Chairman" />
                 <Director name="Grace Amponsah" title="Treasurer" />
+                <Director name="Caleb Duah" title="Board Member" />
                 <Director name="Marcanthony Lozano" title="Board Member" />
-                <Director name="Whitney Ashley" title="Board Member" />
                 <Director name="Marc Caccavelli" title="Board Member" />
                 <Director name="Heather Lagone" title="Board Member" />
                 <Director name="Tamara Cooper" title="Board Member" />

@@ -1,5 +1,5 @@
 .Button {
-    background: #f58a8a;
+    background: var(--cta);
     border: none;
     border-radius: 32px;
     color: white;
@@ -10,5 +10,5 @@
 }
 
 .Button:hover {
-    background: #fcb0b0;
+    background: var(--cta-hover);
 }

@@ -1,0 +1,26 @@
+.Investment {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.Investment img {
+    margin-left: 1rem;
+    width: 40%
+}
+
+.Text {
+    color: white;
+    margin-right: 1rem;
+    width: 40%;
+}
+
+.Text h2 {
+    font-size: 2rem;
+}
+
+.Text p {
+    font-size: var(--secondary-text);
+    line-height: 2;
+}
