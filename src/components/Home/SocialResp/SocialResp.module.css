@@ -31,5 +31,6 @@
 }
 
 .Text p {
+    color: var(--secondary-color);
     line-height: 1.8;
 }

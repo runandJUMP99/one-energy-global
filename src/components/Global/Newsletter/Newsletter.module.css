@@ -1,0 +1,21 @@
+.Newsletter {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.Socials {
+    margin-top: 1.5rem;
+}
+
+.Social {
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 0.25rem;
+    transition: all 0.25s linear !important;
+}
+
+.Social:hover {
+    background: black;
+    color: white;
+}

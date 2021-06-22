@@ -1,6 +1,29 @@
 .CTASection {
     background: url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/ChangeCTA.jpg?alt=media&token=faf7d55a-e62d-4f87-aa43-ec3c5a36417e");
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
     color: white;
     padding: 4rem 0;
+    position: relative;
     text-align: center;
+}
+
+.Backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.Text {
+    margin: auto;
+    position: relative;
+    width: 50%;
+    z-index: 5;
+}
+
+.Text p {
+    font-size: var(--secondary-text);
 }

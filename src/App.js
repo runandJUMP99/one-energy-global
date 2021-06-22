@@ -1,5 +1,5 @@
 import React, {Suspense, useState} from "react";
-import {Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import About from "./components/About/About";
 import Backdrop from "./components/UI/Backdrop/Backdrop";
@@ -16,10 +16,10 @@ function App() {
 
   function handleShow() {
     setShow(prevValue => !prevValue);
-  }
+  };
 
   return (
-    <div className="App">
+    <BrowserRouter>
       <Backdrop handleShow={handleShow} show={show} />
       <SideDrawer handleShow={handleShow} show={show} />
       <Navbar fixed={true} handleShow={handleShow} />
@@ -34,7 +34,7 @@ function App() {
       </Switch>
       </Suspense>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

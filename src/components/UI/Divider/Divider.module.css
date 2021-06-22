@@ -2,5 +2,6 @@
     border-bottom: 1px solid var(--cta);
     border-top: 1px solid var(--cta);
     padding: 0.1rem 0;
+    margin: 1rem 0;
     width: 30%;
 }

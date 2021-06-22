@@ -29,5 +29,10 @@
 }
 
 .Text p {
+    color: var(--secondary-color);
     line-height: 1.8;
+}
+
+.Text ul {
+    color: var(--secondary-color);
 }

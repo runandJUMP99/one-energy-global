@@ -7,7 +7,7 @@ import classes from "./Directors.module.css";
 const Directors = () => {
     return (
         <div className={classes.Directors}>
-            <h1>Board of Directors</h1>
+            <h1>Our Board of Directors</h1>
             <div className={classes.DirectorsGroup}>
                 <Director name="Nasaiah Hopkins" title="Chairman" />
                 <Director name="Grace Amponsah" title="Treasurer" />
