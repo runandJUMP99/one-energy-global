@@ -1,0 +1,8 @@
+.Department {
+    display: flex;
+    justify-content: center;
+}
+
+.Department img {
+    width: 40%;
+}

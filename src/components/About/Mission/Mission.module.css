@@ -1,0 +1,12 @@
+.Mission {
+    text-align: center;
+}
+
+.Mission h2 {
+    color: var(--highlight);
+    font-size: var(--secondary-header);
+}
+
+.Mission p {
+    font-size: var(--secondary-text);
+}
