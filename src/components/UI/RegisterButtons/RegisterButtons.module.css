@@ -1,0 +1,28 @@
+.RegisterButtons {
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 2.25rem;
+}
+
+.RegisterButtons span {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    position: relative;
+    top: 0.1rem;
+}
+
+.Login {
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.Login:hover {
+    opacity: 1;
+    text-decoration: none;
+}

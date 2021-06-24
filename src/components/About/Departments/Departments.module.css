@@ -1,0 +1,5 @@
+.Departments h2 {
+    color: var(--highlight);
+    font-size: var(--jumbo-text);
+    text-align: center;
+}

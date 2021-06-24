@@ -12,8 +12,8 @@ const Jumbotron = () => {
                 <h1>A Membership-Based, Mass Media Company</h1>
                 <p>Transforming lives through Personal Development Media and Human Services.</p>
                 <div className={classes.Buttons}>
-                    <button className={classes.LearnMore}><NavLink to="/about">Learn More</NavLink></button>
-                    <CTAButton path="/getinvolved">Get Involved</CTAButton>
+                    <button className={classes.LearnMore}><NavLink to="/about">Get Involved</NavLink></button>
+                    <CTAButton path="/getinvolved">Become A Member</CTAButton>
                 </div>
             </div>
         </div>

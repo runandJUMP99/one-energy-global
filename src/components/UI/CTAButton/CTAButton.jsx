@@ -3,10 +3,10 @@ import {NavLink} from "react-router-dom";
 
 import classes from "./CTAButton.module.css";
 
-const CTAButton = ({children, path}) => {
+const CTAButton = ({children, path, style}) => {
     return (
         <button className={classes.CTAButton}>
-            <NavLink to={path}>{children}</NavLink>
+            <NavLink className={classes.Link} to={path} style={style}>{children}</NavLink>
         </button>
     );
 }

@@ -9,7 +9,7 @@
     padding: none;
 }
 
-.CTAButton a {
+.Link {
     background: var(--cta);
     border: 2px solid var(--cta);
     border-radius: 32px;
@@ -19,7 +19,7 @@
     transition: all 0.25s ease-out;
 }
 
-.CTAButton a:hover {
+.Link:hover {
     background: white;
     border: 2px solid white;
     color: var(--cta);
