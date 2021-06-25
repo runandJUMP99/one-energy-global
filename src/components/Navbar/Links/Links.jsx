@@ -14,7 +14,7 @@ const Links = () => {
             <Logo />
             <Link name="Membership" path="/membership" />
             <Link name="Contact" path="/contact" />
-            <RegisterButtons />
+            {/* <RegisterButtons /> */}
         </ul>
     );
 }

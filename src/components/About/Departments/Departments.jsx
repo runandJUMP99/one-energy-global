@@ -9,7 +9,7 @@ const Departments = () => {
     return (
         <div className={classes.Departments}>
             <h2>Our Departments</h2>
-            <Divider style={{margin: "1rem auto"}} />
+            <Divider />
             <Department
                 description="Led by an innovative team of experts (volunteers and staff), our operations team handles the day-to-day business of OEG, ensuring that the organization sustains growth and momentum. Falling under operations, we have: Membership, Social Impact, Human Resources, Partnerships, Communications, Recruitment, Finances, Facilities, and Information Technology."
                 img="https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/Operations.jpg?alt=media&token=c14d1520-5515-4b4b-9540-74323e48bb92"
