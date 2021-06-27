@@ -1,5 +1,16 @@
 .Leader {
     margin: 1rem;
-    max-width: 20rem;
     text-align: center;
+    width: 20rem;
+}
+
+.Leader img {
+    border-radius: 50%;
+    height: 8rem;
+    object-fit: cover;
+    width: 8rem;
+}
+
+.Leader h3 {
+    color: var(--highlight);
 }

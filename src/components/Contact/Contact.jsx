@@ -54,18 +54,24 @@ const Contact  = () => {
 
     return (
         <div className={classes.Contact}>
-            <Typography variant="h6" gutterBottom>Enter Your Contact Information</Typography>
-            <FormProvider {...methods}>
-                <form onSubmit={methods.handleSubmit((data) => handleSubmit(data))}>
-                    <Grid container spacing={3}>
-                        <Input required name="name" label="Name" size={12} variant="filled" />
-                        <Input required name="email" label="Email" size={12} variant="filled" />
-                        <Input required name="phone" label="Phone Number" size={12} variant="filled" />
-                        <Input required name="message" label="Message" multiline={true} size={12} variant="filled" />
-                    </Grid>
-                    <button>Send</button>
-                </form>
-            </FormProvider>
+            <div className={classes.Text}>
+                <h2>Contact Us</h2>
+                
+            </div>
+            <div className={classes.Form}>
+                <Typography variant="h6" gutterBottom>Enter Your Contact Information</Typography>
+                <FormProvider {...methods}>
+                    <form onSubmit={methods.handleSubmit((data) => handleSubmit(data))}>
+                        <Grid container spacing={3}>
+                            <Input required name="name" label="Name" size={12} variant="filled" />
+                            <Input required name="email" label="Email" size={12} variant="filled" />
+                            <Input required name="phone" label="Phone Number" size={12} variant="filled" />
+                            <Input required name="message" label="Message" multiline={true} size={12} variant="filled" />
+                        </Grid>
+                        <button>Send</button>
+                    </form>
+                </FormProvider>
+            </div>
         </div>
     );
 }

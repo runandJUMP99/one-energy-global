@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.Newsletter h2 {
+    color: initial !important;
+    font-size: 1.5rem !important;
+}
+
 .Socials {
     margin-top: 1.5rem;
 }

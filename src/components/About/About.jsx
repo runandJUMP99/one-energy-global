@@ -1,5 +1,7 @@
 import React from "react";
 
+import CTASection from "../Global/CTASection/CTASection";
+import Newsletter from "../Global/Newsletter/Newsletter";
 import Departments from "./Departments/Departments";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Leadership from "./Leadership/Leadership";
@@ -14,6 +16,8 @@ const About = () => {
             <Mission />
             <Departments />
             <Leadership />
+            <CTASection />
+            <Newsletter />
         </div>
     );
 }

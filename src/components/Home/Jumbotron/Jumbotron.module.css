@@ -3,18 +3,15 @@
     color: white;
     margin: auto;
     padding: 8rem 0 5rem;
-}
-
-.Text {
     text-align: center;
 }
 
-.Text h1 {
+.Jumbotron h1 {
     font-size: 2rem;
     margin: 1.5rem 0 0.5rem;
 }
 
-.Text p {
+.Jumbotron p {
     font-size: var(--secondary-text);
     margin: 0 0 0.5rem;
     opacity: 0.7;

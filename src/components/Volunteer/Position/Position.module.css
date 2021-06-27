@@ -1,0 +1,8 @@
+.Position {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0.25rem;
+    width: 24rem;
+}

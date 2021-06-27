@@ -1,0 +1,23 @@
+.Jumbotron {
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
+    url("https://cdn.pixabay.com/photo/2015/03/09/15/55/bike-665925__340.jpg") 40%/cover no-repeat border-box;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: auto;
+    padding: 7rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.Jumbotron h1 {
+    font-size: 2.25rem;
+    margin: 1rem auto;
+    width: 60%;
+}
+
+.Jumbotron p {
+    font-size: 1.25rem;
+    line-height: 2;
+    margin: auto;
+    width: 80%;
+}

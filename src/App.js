@@ -5,11 +5,11 @@ import About from "./components/About/About";
 import Backdrop from "./components/UI/Backdrop/Backdrop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import GetInvolved from "./components/GetInvolved/GetInvolved";
 import Home from "./components/Home/Home";
+import Membership from "./components/Membership/Membership";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
 import SideDrawer from "./components/UI/SideDrawer/SideDrawer";
+import Volunteer from "./components/Volunteer/Volunteer";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -29,8 +29,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/getinvolved" component={GetInvolved} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/membership" component={Membership} />
+        <Route path="/volunteer" component={Volunteer} />
       </Switch>
       </Suspense>
       <Footer />

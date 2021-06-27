@@ -1,0 +1,9 @@
+.Coordinators {
+    padding: 2rem 1rem;
+}
+
+.Positions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

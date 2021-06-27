@@ -1,10 +1,9 @@
-.Projects {
-    margin: auto;
+.Creative {
+    padding: 2rem 1rem;
 }
 
-.ProjectsGroup {
+.Positions {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 4rem 0;
 }
