@@ -1,19 +1,6 @@
 .Contact {
     margin: auto;
-    max-width: 600px;
-    padding: 2rem 0;
     text-align: center;
-}
-
-.Contact h4 {
-    margin-bottom: 1rem;
-}
-
-.Contact img {
-    animation: appear 1s ease-out;
-    margin-top: 2rem;
-    max-width: 250px;
-    width: 100%;
 }
 
 .Captcha {
@@ -21,6 +8,12 @@
     display: flex;
     justify-content: center;
     margin: 1rem auto;
+}
+
+.ContactInfo {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
 }
 
 @keyframes appear {

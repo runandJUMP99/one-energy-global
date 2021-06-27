@@ -1,5 +1,5 @@
-// import * as actionTypes from "../actions/actionTypes";
-// import * as api from "./api";
+import * as actionTypes from "../actions/actionTypes";
+import * as api from "./api";
 
 // export const getUsers = () => async(dispatch) => {
 //     try {
@@ -18,15 +18,15 @@
 //     }
 // };
 
-// export const editUser = (id, user) => async(dispatch) => {
-//     try {
-//         const {data} = await api.editUser(id, user);
+export const editUser = (id, user) => async(dispatch) => {
+    try {
+        const {data} = await api.editUser(id, user);
         
-//         dispatch({type: actionTypes.EDIT_USER, payload: data});
-//     } catch(err) {
-//         console.log(err);
-//     }
-// };
+        dispatch({type: actionTypes.EDIT_USER, payload: data});
+    } catch(err) {
+        console.log(err);
+    }
+};
 
 // export const updateUsers = (users, token) => async(dispatch) => {
 //     try {

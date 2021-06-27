@@ -3,9 +3,10 @@ import * as actionTypes from "../actions/actionTypes";
 const initialState = {
     error: null,
     email: null,
-    img: "",
     loading: false,
-    name: null,
+    firstName: null,
+    lastName: null,
+    phone: null,
     token: null,
     userId: null
 }
@@ -16,9 +17,10 @@ const auth = (state = initialState, action) => {
             return {
                 error: null,
                 email: action.payload.email,
-                img: action.payload.img,
                 loading: false,
-                name: action.payload.name,
+                firstName: action.payload.firstName,
+                lastName: action.payload.lastName,
+                phone: action.payload.phone,
                 token: action.payload.token,
                 userId: action.payload.uid
             };
@@ -38,17 +40,19 @@ const auth = (state = initialState, action) => {
                 ...state, 
                 error: null,
                 email: action.payload.email,
-                img: action.payload.img,
                 loading: false,
-                name: action.payload.name
+                firstName: action.payload.firstName,
+                lastName: action.payload.lastName,
+                phone: action.payload.phone
             };
         case actionTypes.AUTH_LOGOUT:
             return {
                 error: null,
                 email: null,
-                img: "",
                 loading: false,
-                name: null,
+                firstName: null,
+                lastName: null,
+                phone: null,
                 token: null,
                 userId: null
             };

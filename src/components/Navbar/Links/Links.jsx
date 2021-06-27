@@ -11,7 +11,9 @@ const Links = () => {
         <ul className={classes.Links}>
             <Link name="About" path="/about" />
             <Link name="Volunteer" path="/volunteer" />
-            <Logo />
+            <div className={classes.Logo}>
+                <Logo />
+            </div>
             <Link name="Membership" path="/membership" />
             <Link name="Contact" path="/contact" />
             {/* <RegisterButtons /> */}

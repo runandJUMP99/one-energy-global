@@ -1,0 +1,25 @@
+.ContactInfo {
+    margin-right: 1rem;
+    text-align: left;
+}
+
+.ContactInfo h2 {
+    color: var(--highlight);
+}
+
+.ContactInfo a {
+    align-items: center;
+    color: var(--cta);
+    display: flex;
+    margin: 0.5rem 0;
+    position: relative;
+    right: 0.2rem;
+}
+
+.ContactInfo a:hover {
+    color: var(--cta-hover);
+}
+
+.ContactInfo svg {
+    margin-right: 0.5rem;
+}

@@ -1,79 +1,102 @@
 import React, {useState} from "react";
-// import {useDispatch, useSelector} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 
 import {TextField, Typography} from "@material-ui/core";
 
-// import Spinner from "../../../../UI/Spinner/Spinner";
+import Button from "../../UI/Button/Button";
+import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./Register.module.css";
-// import {register, resetPassword} from "../../../../../store/actions/auth";
+import {register, resetPassword} from "../../../store/actions/auth";
 //signInWithGoogle can be imported from ... ../auth
 
 const Register = () => {
-    // const [emailSent, setEmailSent] = useState(false);
-    // const [isNewUser, setIsNewUser] = useState(false);
-    // const [isResettingPassword, setIsResettingPassword] = useState(false);
-    // const [userData, setUserData] = useState({
-    //     email: "",
-    //     name: "",
-    //     password: ""
-    // });
-    // const error = useSelector(state => state.auth.error);
-    // const loading = useSelector(state => state.auth.loading)
-    // const dispatch = useDispatch();
+    const [emailSent, setEmailSent] = useState(false);
+    const [isNewUser, setIsNewUser] = useState(false);
+    const [isResettingPassword, setIsResettingPassword] = useState(false);
+    const [userData, setUserData] = useState({
+        email: "",
+        firstName: "",
+        lastName: "",
+        password: "",
+        phone: ""
+    });
+    const error = useSelector(state => state.auth.error);
+    const loading = useSelector(state => state.auth.loading)
+    const dispatch = useDispatch();
 
-    // function handleSubmit(event) {
-    //     event.preventDefault();
+    function handleSubmit(event) {
+        event.preventDefault();
 
-    //     if (isResettingPassword) {
-    //         dispatch(resetPassword(userData.email));
-    //         setEmailSent(true);
-    //         setIsResettingPassword(false);
-    //     } else {
-    //         setEmailSent(false);
-    //         dispatch(register(isNewUser, userData));
-    //     }
+        if (isResettingPassword) {
+            dispatch(resetPassword(userData.email));
+            setEmailSent(true);
+            setIsResettingPassword(false);
+        } else {
+            setEmailSent(false);
+            dispatch(register(isNewUser, userData));
+        }
 
-    //     handleClear();
-    // }
+        setUserData({
+            email: "",
+            firstName: "",
+            lastName: "",
+            password: "",
+            phone: ""
+        });
+    }
 
-    // function handleSwitch() {
-    //     setIsNewUser(prevValue => !prevValue);
+    function handleSwitch() {
+        setIsNewUser(prevValue => !prevValue);
         
-    //     if (emailSent) {
-    //         setEmailSent(false);
-    //     }
-    // }
-
-    // function handleClear() {
-    //     setUserData({
-    //         email: "",
-    //         name: "",
-    //         password: ""
-    //     });
-    // }
+        if (emailSent) {
+            setEmailSent(false);
+        }
+    }
 
     return (
         <div className={classes.Register}>
-            {/* {loading ? <Spinner />
+            {loading ? <Spinner />
                 : <>
                     <Typography align="center" variant="h6">
-                        {isResettingPassword ? "Enter the Email Linked to Your Account to Reset Your Password" : isNewUser ? "Register to Submit an Entry" : "Login to Submit an Entry"}
+                        {isResettingPassword ? "Enter the Email Linked to Your Account to Reset Your Password" : `Sign ${isNewUser ? "up" : "in"} for Access to Exclusive Content!`}
                     </Typography>
-                    <p className={classes.Error}>{error}</p>
-                    {emailSent && <p className={classes.EmailSent}>Password Reset Email Sent!</p>}
+                     <p className={classes.Error}>{error}</p> {/*if there is an error, show error */}
+                    {emailSent && <p className={classes.EmailSent}>Password Reset Email Sent!</p>} {/*only displayed if password reset has been requested */}
                     <form autoComplete="off" className={classes.Form} noValidate onSubmit={handleSubmit}>
                         {isNewUser && 
-                            <TextField 
-                                fullWidth 
-                                label="Username"
-                                margin="normal" 
-                                name="username"
-                                onChange={(event) => setUserData({...userData, name: event.target.value})} 
-                                required
-                                value={userData.name}
-                                variant="outlined"
-                            />
+                            <>
+                                <TextField 
+                                    fullWidth 
+                                    label="First Name"
+                                    margin="normal"
+                                    name="firstName"
+                                    onChange={(event) => setUserData({...userData, firstName: event.target.value})} 
+                                    required
+                                    value={userData.firstName}
+                                    variant="outlined"
+                                />
+                                <TextField 
+                                    fullWidth 
+                                    label="Last Name"
+                                    margin="normal" 
+                                    name="lastName"
+                                    onChange={(event) => setUserData({...userData, lastName: event.target.value})} 
+                                    required
+                                    value={userData.lastName}
+                                    variant="outlined"
+                                />
+                                <TextField 
+                                    fullWidth 
+                                    label="Phone Number"
+                                    margin="normal" 
+                                    name="phone"
+                                    onChange={(event) => setUserData({...userData, phone: event.target.value})} 
+                                    required
+                                    value={userData.phone}
+                                    variant="outlined"
+                                />
+                            </>
                         }
                         <TextField 
                             fullWidth 
@@ -102,8 +125,7 @@ const Register = () => {
                         <p className={classes.ForgotPassword} onClick={() => setIsResettingPassword(prevValue => !prevValue)}>
                             {isResettingPassword ? "Back to login" : (!isNewUser && "Forgot password?")}
                         </p>
-                        <Button className={classes.ButtonSubmit} color="primary" fullWidth size="large" type="submit" variant="contained">Submit</Button>
-                        <Button color="secondary" fullWidth onClick={handleClear} size="small" variant="contained">Clear</Button>
+                        <Button>Sign Up!</Button>
                         {!isResettingPassword && //if user is resetting password, this text should not be displayed
                             <p className={classes.Switch}>
                                 {!isNewUser ? "Don't have an account? " : "Already signed up? "} 
@@ -113,13 +135,14 @@ const Register = () => {
                             </p>}
                     </form>
                 </>
-            } */}
+            }
         </div>
     );
 }
 
 export default Register;
 
+//GOOGLE SIGN IN
 
 {/* <button className={classes.Google} onClick={() => dispatch(signInWithGoogle())}><i className="fab fa-google"></i> Sign In With Google</button>
 <p className={classes.Divider}>-OR-</p> */}

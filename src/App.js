@@ -1,5 +1,7 @@
-import React, {Suspense, useState} from "react";
+import React, {useEffect, useState, Suspense} from "react";
+import {useDispatch} from "react-redux";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
+import firebaseConfig from "./services/firebase";
 
 import About from "./components/About/About";
 import Backdrop from "./components/UI/Backdrop/Backdrop";
@@ -11,8 +13,15 @@ import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/UI/SideDrawer/SideDrawer";
 import Volunteer from "./components/Volunteer/Volunteer";
 
+import {authCheckState} from "./store/actions/auth";
+
 function App() {
   const [show, setShow] = useState(false);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(authCheckState());
+  }, [dispatch]);
 
   function handleShow() {
     setShow(prevValue => !prevValue);

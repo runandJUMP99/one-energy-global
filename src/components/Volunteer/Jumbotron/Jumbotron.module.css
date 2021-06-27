@@ -1,6 +1,6 @@
 .Jumbotron {
     background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
-    url("https://cdn.pixabay.com/photo/2015/03/09/15/55/bike-665925__340.jpg") 40%/cover no-repeat border-box;
+    url("") 40%/cover no-repeat border-box;
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
     color: white;
     margin: auto;

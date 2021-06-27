@@ -11,7 +11,8 @@ import authReducer from "./store/reducers/auth";
 import usersReducer from "./store/reducers/users";
 
 const reducers = combineReducers({
-  auth: authReducer
+  auth: authReducer,
+  users: usersReducer
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));
