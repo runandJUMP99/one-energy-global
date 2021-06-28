@@ -14,7 +14,7 @@
     max-width: 1000px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 525px) {
     .DirectorsGroup {
         align-items: stretch;
         display: flex;

@@ -1,12 +1,27 @@
 .Mission {
+    margin: auto;
+    max-width: 800px;
+    padding: 2rem 0;
     text-align: center;
+    width: 90%;
 }
 
 .Mission h2 {
     color: var(--highlight);
-    font-size: var(--jumbo-text);
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 .Mission p {
     font-size: var(--secondary-text);
+}
+
+@media (min-width: 850px) {
+    .Mission {
+        padding: 4rem 0;
+    }
+    
+    .Mission h2 {
+        font-size: var(--jumbo-text);
+    }
 }

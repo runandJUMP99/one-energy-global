@@ -1,5 +1,13 @@
 .Form {
-    margin-left: 1rem;
-    max-width: 600px;
-    text-align: left;
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+}
+
+@media (min-width: 850px) {
+    .Form {
+        margin: initial;
+        margin-left: 1rem;
+        text-align: left;
+    }
 }

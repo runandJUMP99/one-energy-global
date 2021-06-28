@@ -1,25 +1,59 @@
 .Department {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 4rem 0;
+    margin: 0;
+    max-width: 1500px;
 }
 
 .Department img {
-    border-radius: 4px;
-    margin: 0 1rem;
-    width: 40%;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
 }
 
 .Text {
     background: white;
     border-left: 4px solid var(--cta);
+    border-right: 4px solid var(--cta);
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    margin: 0 1rem;
+    margin: 0;
     padding: 1rem;
-    width: 40%;
+    text-align: center;
+    width: 100%;
 }
 
 .Text h3 {
     color: var(--highlight);
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.Text p {
+    line-height: 2rem;
+}
+
+@media (min-width: 850px) {
+    .Department {
+        flex-direction: row;
+        margin: 4rem auto;
+    }
+
+    .Department img {
+        border-radius: 4px;
+        margin: 0 1rem;
+        width: 40%;
+    }
+
+    .Text {
+        border-radius: 4px;
+        border-right: 0;
+        margin: 0 1rem;
+        text-align: left;
+        width: 40%;
+    }
+
+    .Text h3 {
+        font-size: var(--secondary-header);
+    }
 }

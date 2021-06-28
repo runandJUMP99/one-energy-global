@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+.FooterContacts a:hover {
+    color: #666565;
+}
+
 .ContactUs p,
 .ContactUs a {
     align-items: center;

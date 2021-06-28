@@ -6,16 +6,16 @@ import RegisterButtons from "../../UI/RegisterButtons/RegisterButtons";
 
 import classes from "./Links.module.css";
 
-const Links = () => {
+const Links = ({setShow}) => {
     return (
         <ul className={classes.Links}>
-            <Link name="About" path="/about" />
-            <Link name="Volunteer" path="/volunteer" />
+            <Link name="About" path="/about" setShow={setShow} />
+            <Link name="Volunteer" path="/volunteer" setShow={setShow} />
             <div className={classes.Logo}>
                 <Logo />
             </div>
-            <Link name="Membership" path="/membership" />
-            <Link name="Contact" path="/contact" />
+            <Link name="Membership" path="/membership" setShow={setShow} />
+            <Link name="Contact" path="/contact" setShow={setShow} />
             {/* <RegisterButtons /> */}
         </ul>
     );

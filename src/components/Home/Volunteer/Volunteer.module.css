@@ -1,28 +1,24 @@
 .Volunteer {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 8rem 0;
+    max-width: 1500px;
+    text-align: center;
 }
 
 .Volunteer img {
-    border-radius: 4px;
-    position: relative;
-    right: 2rem;
-    top: 4rem;
-    width: 40%;
+    width: 100%;
 }
 
 .Text {
     background: white;
-    border-radius: 4px;
+    border-left: 4px solid var(--cta);
     border-right: 4px solid var(--cta);
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
     color: var(--text);
-    left: 4rem;
     padding: 2rem;
-    position: relative;
-    width: 35%;
+    width: 100%;
     z-index: 5;
 }
 
@@ -33,4 +29,29 @@
 
 .Text p {
     line-height: 1.8;
+}
+
+@media (min-width: 850px) {
+    .Volunteer {
+        flex-direction: row;
+        margin: 8rem auto;
+        text-align: left;
+    }
+
+    .Volunteer img {
+        border-radius: 4px;
+        bottom: 4rem;
+        position: relative;
+        right: 2rem;
+        top: 4rem;
+        width: 40%;
+    }
+
+    .Text {
+        border-left: 0;
+        border-radius: 4px;
+        left: 4rem;
+        position: relative;
+        width: 35%;
+    }
 }

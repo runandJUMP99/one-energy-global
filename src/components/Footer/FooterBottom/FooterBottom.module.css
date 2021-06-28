@@ -5,10 +5,10 @@
 }
 
 .FooterBottom a {
-    color: #db6400;
+    color: var(--cta);
     text-decoration: none;
 }
 
 .FooterBottom a:hover {
-    color: #f77a14;
+    color: var(--cta-hover);
 }

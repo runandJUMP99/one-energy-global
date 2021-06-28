@@ -2,7 +2,7 @@
     background: url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/ChangeCTA.jpg?alt=media&token=faf7d55a-e62d-4f87-aa43-ec3c5a36417e");
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 4rem 0;
+    padding: 2rem 0;
     position: relative;
     text-align: center;
 }
@@ -19,11 +19,26 @@
 
 .Text {
     margin: auto;
+    max-width: 1000px;
     position: relative;
-    width: 50%;
+    width: 90%;
     z-index: 5;
+}
+
+.Text h1 {
+    font-size: 1.5rem;
 }
 
 .Text p {
     font-size: var(--secondary-text);
+}
+
+@media (min-width: 850px) {
+    .CTASection {
+        padding: 4rem 0;
+    }
+
+    .Text h1 {
+        font-size: 2rem;
+    }
 }

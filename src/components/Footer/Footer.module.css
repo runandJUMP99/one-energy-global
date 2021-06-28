@@ -8,10 +8,6 @@
     margin-top: 0;
 }
 
-.Footer a:hover {
-    color: #666565;
-}
-
 .MainContent {
     margin: auto;
     max-width: 1000px;

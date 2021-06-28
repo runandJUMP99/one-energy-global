@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 
 import classes from "./SideDrawer.module.css";
 
-const SideDrawer = ({handleShow, show}) => {
+const SideDrawer = ({handleShow, setShow, show}) => {
     function handleClick(link) {
         // if (link === "Home" || link === "Services" || link === "Contact Us") {
         //     document.body.scrollTop = 0; // For Safari
@@ -20,9 +20,9 @@ const SideDrawer = ({handleShow, show}) => {
         <div className={classes.SideDrawer} style={{
             transform: show ? "translateX(0)" : "translateX(-110%)",
         }}>
-            <Logo />
+            <Logo setShow={setShow} />
             <nav>
-                <Links onClick={handleClick} />
+                <Links onClick={handleClick} setShow={setShow} />
             </nav>
         </div>
     )

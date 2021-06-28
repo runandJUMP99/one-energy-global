@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+.FooterLink a:hover {
+    color: #666565;
+}
+
 @media(min-width: 500px) {
     .FooterLink {
         margin: 0;

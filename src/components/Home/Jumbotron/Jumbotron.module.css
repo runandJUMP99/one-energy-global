@@ -2,19 +2,28 @@
     background: rgba(0, 0, 0, 0.7);
     color: white;
     margin: auto;
-    padding: 8rem 0 5rem;
+    overflow: hidden;
+    padding: 8rem 1rem 5rem;
+    position: relative;
     text-align: center;
 }
 
 .Jumbotron h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1.5rem 0 0.5rem;
 }
 
 .Jumbotron p {
-    font-size: var(--secondary-text);
     margin: 0 0 0.5rem;
     opacity: 0.7;
+}
+
+.Video {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1; 
 }
 
 .Buttons {
@@ -24,6 +33,7 @@
 .LearnMore {
     background: none;
     border: none;
+    margin-bottom: 2rem;
     padding: none;
 }
 
@@ -44,66 +54,18 @@
     color: white;
 }
 
-@media (min-width: 650px) {
-
+@media (min-width: 720px) {
+    .Jumbotron h1 {
+        font-size: 2rem;
+    }
+    
+    .Jumbotron p {
+        font-size: var(--secondary-text);
+    }
 }
 
-@media (min-width: 850px) {
-
+@media (min-width: 1000px) {
+    .Video {
+        top: -10%;
+    }
 }
-
-
-
-
-/* .ImageGroup {
-    position: relative;
-    width: 100%;
-}
-
-.ImageContainer {
-    border-radius: 35% 20% 30% 35%/25% 40% 25% 20%;
-    height: 20rem;
-    overflow: hidden;
-    transform: rotate(20deg);
-    width: 100%;
-}
-
-.ImageContainer img {
-    bottom: 2rem;
-    position: relative;
-    right: 21rem;
-    transform: rotate(-20deg);
-}
-
-.Big {
-    background: #3eb0c7;
-    border-radius: 50% 40% 45% 40%/ 40% 35% 50% 45%;
-    height: 20rem;
-    left: -2rem;
-    position: absolute;
-    top: -3rem;
-    transform: rotate(-10deg);
-    width: 110%;
-    z-index: -1;
-}
-
-.Medium {
-    background: #fca45c;
-    border-radius: 50%;
-    bottom: -2rem;
-    height: 10rem;
-    left: -2rem;
-    position: absolute;
-    transform: rotate(25deg);
-    width: 6rem;
-}
-
-.Small {
-    background: salmon;
-    border-radius: 50%;
-    height: 6rem;
-    position: absolute;
-    right: -3rem;
-    top: 2rem;
-    width: 6rem;
-} */

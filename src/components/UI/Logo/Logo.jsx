@@ -4,10 +4,15 @@ import {NavLink} from "react-router-dom";
 import classes from "./Logo.module.css";
 import logo from "../../../assets/images/logo.png"
 
-const Logo = () => {
+const Logo = ({setShow}) => {
     return (
         <NavLink to="/">
-            <img className={classes.Logo} src={logo} alt="Logo" />
+            <img
+                alt="Logo"
+                className={classes.Logo}
+                onClick={() => setShow(false)}
+                src={logo}
+            />
         </NavLink>
     );
 }

@@ -1,26 +1,83 @@
 .Investment {
     background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    padding: 4rem 1rem;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    position: relative;
 }
 
 .Investment img {
-    margin-left: 1rem;
-    width: 40%
+    margin-left: auto;
+    width: 100%
+}
+
+.Video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; 
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 1500px;
 }
 
 .Text {
     color: white;
     margin-right: 1rem;
-    width: 40%;
+    text-align: center;
+    width: 100%;
 }
 
 .Text h2 {
     font-size: 2rem;
+    margin-top: 0;  
 }
 
 .Text p {
-    font-size: var(--secondary-text);
+    font-size: 1rem;
     line-height: 2;
+    margin-bottom: 2.5rem;
+}
+
+.Divider {
+    border-bottom: 1px solid var(--cta);
+    border-top: 1px solid var(--cta);
+    padding: 0.1rem 0;
+    margin: 1rem auto;
+    width: 30%;
+}
+
+@media (min-width: 850px) {
+    .Investment {
+        padding: 4rem 1rem;
+    }
+    
+    .Text p {
+        font-size: var(--secondary-text);
+    }
+}
+
+@media (min-width: 1000px) {
+    .Investment img {
+        margin-left: 1rem;
+        width: 40%;
+    }
+    
+    .Content {
+        flex-direction: row; 
+    }
+    
+    .Text {
+        text-align: left;
+        width: 40%;
+    }
+    
+    .Divider {
+        margin: 1rem 0;
+    }
 }

@@ -1,19 +1,21 @@
 .ContactInfo {
-    margin-right: 1rem;
-    text-align: left;
+    margin: 0 1rem 1rem;
 }
 
 .ContactInfo h2 {
     color: var(--highlight);
+    margin-top: 0;
 }
 
 .ContactInfo a {
     align-items: center;
     color: var(--cta);
     display: flex;
+    justify-content: center;
     margin: 0.5rem 0;
     position: relative;
     right: 0.2rem;
+    text-decoration: none;
 }
 
 .ContactInfo a:hover {
@@ -22,4 +24,14 @@
 
 .ContactInfo svg {
     margin-right: 0.5rem;
+}
+
+@media (min-width: 850px) {
+    .ContactInfo {
+        text-align: left;
+    }
+
+    .ContactInfo a {
+        justify-content: initial;
+    }
 }

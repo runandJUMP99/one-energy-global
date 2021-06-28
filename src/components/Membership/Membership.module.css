@@ -3,17 +3,20 @@
     background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
     url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/SocialResp.jpg?alt=media&token=e2113c21-99e7-4a7a-b5ce-2cf460823f31") 40%/cover no-repeat border-box;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     object-fit: cover;
-    padding: 0;
+    padding: 8rem 0 0;
+    /* position: fixed; */
     width: 100%;
 }
 
 .Text {
     color: white;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
     max-width: 350px;
+    text-align: center;
     width: 90%;
 }
 
@@ -29,4 +32,14 @@
 .Text li {
     font-size: 1.1rem;
     line-height: 1.5;
+}
+
+@media (min-width: 850px) {
+    .Membership {
+        flex-direction: row;
+    }
+
+    .Text {
+        margin-right: 1rem;
+    }
 }

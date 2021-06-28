@@ -2,9 +2,9 @@ import React from "react";
 
 import classes from "./Divider.module.css";
 
-const Divider = ({style}) => {
+const Divider = () => {
     return (
-        <div className={classes.Divider} style={style}></div>
+        <div className={classes.Divider}></div>
     );
 }
 

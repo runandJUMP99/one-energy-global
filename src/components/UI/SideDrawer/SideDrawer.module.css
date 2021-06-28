@@ -1,5 +1,6 @@
 .SideDrawer {
     background: var(--secondary-color);
+    box-shadow: 1px 0 4px 2px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     height: 100%;
     left: 0;

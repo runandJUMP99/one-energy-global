@@ -13,7 +13,7 @@ const Contact  = () => {
     return (
         <div className={classes.Contact}>
             <Jumbotron />
-            <div className={classes.ContactInfo}>
+            <div className={classes.ContactContent}>
                 <ContactInfo />
                 <Form />
             </div>

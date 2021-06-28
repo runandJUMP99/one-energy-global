@@ -1,6 +1,6 @@
 .ToggleButton {
     background: transparent;
-    border: 1px solid #006a71;
+    border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
     margin: 0.25rem 0.5rem;
@@ -15,7 +15,7 @@
 }
 
 .ToggleButton__bar {
-    background: #006a71;
+    background: white;
     display: block;
     height: 0.2rem;
     margin: 0.6rem 0;

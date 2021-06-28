@@ -5,10 +5,15 @@
 
 .Link a {
     color: white;
-    opacity: 0.7;
     text-decoration: none;
 }
 
 .Link a:hover {
     opacity: 1;
+}
+
+@media (min-width: 850px) {
+    .Link a {
+        opacity: 0.7;
+    }
 }

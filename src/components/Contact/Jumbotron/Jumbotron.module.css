@@ -1,11 +1,17 @@
 .Jumbotron {
     background: var(--secondary-color);
     color: white;
-    font-size: 1.5rem;
-    padding: 6rem 1rem 1rem;
+    padding: 4rem 1rem 1rem;
 }
 
 .Jumbotron h1 {
     margin: 2rem auto;
     max-width: 1000px;
+}
+
+@media (min-width: 850px) {
+    .Jumbotron {
+        font-size: 1.5rem;
+        padding: 6rem 2rem 2rem;
+    }
 }
