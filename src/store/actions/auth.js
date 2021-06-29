@@ -5,7 +5,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 export const register = (isNewUser, user) => async(dispatch) => {
-    try {
+    try {console.log(user);
         dispatch({type: actionTypes.AUTH_START});
 
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
@@ -29,7 +29,7 @@ export const register = (isNewUser, user) => async(dispatch) => {
                 userId: response.user.uid
             };
             
-            await currentUser.updateProfile({displayName: user.firstName + " " + user.lastName});
+            await currentUser.updateProfile({displayName: user.firstName});
             await dispatch(editUser(newUser.userId, newUser));
         } else {
             response = await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
@@ -40,15 +40,15 @@ export const register = (isNewUser, user) => async(dispatch) => {
         }
         
         const token = await firebase.auth().currentUser.getIdToken(true);
+        console.log(user);
         const userData = {
             email: currentUser.email,
-            firstName: user.firstName,
+            firstName: currentUser.displayName,
             lastName: user.lastName,
             phone: user.phone,
             token: token,
             uid: response.user.uid
         }
-
         localStorage.setItem("oegexpirationDate", expirationDate);
         localStorage.setItem("oegtoken", userData.token);
         
@@ -157,8 +157,8 @@ export const checkAuthTimeout = (expirationTime, refreshToken) => (dispatch) => 
         try {
             const {data} = await api.refreshAuth(refreshToken);
 
-            localStorage.setItem("rdlexpirationDate", data.expires_in * 1000);
-            localStorage.setItem("rdltoken", data.id_token);
+            localStorage.setItem("oegexpirationDate", data.expires_in * 1000);
+            localStorage.setItem("oegtoken", data.id_token);
 
             dispatch({type: actionTypes.AUTH_REFRESH, payload: data.id_token});
         } catch(err) {
@@ -169,32 +169,33 @@ export const checkAuthTimeout = (expirationTime, refreshToken) => (dispatch) => 
 };
 
 export const logout = () => (dispatch) => {
-    localStorage.removeItem("rdlexpirdationDate");
-    localStorage.removeItem("rdltoken");
+    localStorage.removeItem("oegexpirdationDate");
+    localStorage.removeItem("oegtoken");
 
     dispatch({type: actionTypes.AUTH_LOGOUT})
 };
 
 export const authCheckState = () => (dispatch) => {
-    const token = localStorage.getItem("rdltoken");
+    const token = localStorage.getItem("oegtoken");
 
     if (!token) {
         dispatch(logout());
     } else {
-        const expirationDate = new Date(localStorage.getItem("rdlexpirationDate"));
+        const expirationDate = new Date(localStorage.getItem("oegexpirationDate"));
 
         if (expirationDate >= new Date()) {
             firebase.auth().onAuthStateChanged(user => {
                 if (user){ 
-                    const data = {
+                    const userData = {
                         email: user.email,
-                        img: user.photoURL ? user.photoURL : "",
-                        name: user.displayName,
+                        firstName: user.firstName,
+                        lastName: user.lastName,
+                        phone: user.phone,
                         token: token,
                         uid: user.uid
-                    };
+                    }
         
-                    dispatch({type: actionTypes.AUTH, payload: data});
+                    dispatch({type: actionTypes.AUTH, payload: userData});
                     dispatch(checkAuthTimeout(expirationDate.getTime() - new Date().getTime(), user.refreshToken));
                 }
                 else {

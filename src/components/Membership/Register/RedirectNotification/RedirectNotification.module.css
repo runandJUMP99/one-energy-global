@@ -1,0 +1,20 @@
+.RedirectNotification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.RedirectNotification h3 {
+    color: var(--cta);
+    margin-top: 0;
+}
+
+.RedirectNotification a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+.RedirectNotification a:hover {
+    color: var(--secondary-color);
+}

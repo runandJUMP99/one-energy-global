@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Membership from "./components/Membership/Membership";
+import Modal from "./components/UI/Modal/Modal";
 import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/UI/SideDrawer/SideDrawer";
 import Volunteer from "./components/Volunteer/Volunteer";
@@ -17,6 +18,7 @@ import {authCheckState} from "./store/actions/auth";
 
 function App() {
   const [show, setShow] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -31,6 +33,7 @@ function App() {
     <BrowserRouter>
       <Backdrop handleShow={handleShow} show={show} />
       <SideDrawer show={show} setShow={setShow} />
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <Navbar fixed={true} handleShow={handleShow} />
       <Navbar fixed={false} handleShow={handleShow} />
       <Suspense fallback="Loading...">

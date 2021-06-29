@@ -13,3 +13,8 @@
 .Button:hover {
     background: var(--cta-hover);
 }
+
+.Button a {
+    color: inherit;
+    text-decoration: none;
+}

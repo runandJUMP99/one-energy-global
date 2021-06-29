@@ -6,6 +6,7 @@
 
 .Leader img {
     border-radius: 50%;
+    cursor: pointer;
     height: 8rem;
     object-fit: cover;
     width: 8rem;
@@ -13,4 +14,13 @@
 
 .Leader h3 {
     color: var(--highlight);
+    cursor: pointer;
+}
+
+.Leader img:hover {
+    opacity: 0.7;
+}
+
+.Leader h3:hover {
+    color: var(--secondary-color);
 }

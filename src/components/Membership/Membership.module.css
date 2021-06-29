@@ -4,18 +4,18 @@
     url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/SocialResp.jpg?alt=media&token=e2113c21-99e7-4a7a-b5ce-2cf460823f31") 40%/cover no-repeat border-box;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
+    min-height: 100vh;
     object-fit: cover;
-    padding: 8rem 0 0;
-    /* position: fixed; */
+    padding: 8rem 0 4rem;
     width: 100%;
 }
 
 .Text {
     color: white;
     margin-bottom: 1rem;
-    max-width: 350px;
+    max-width: 450px;
     text-align: center;
     width: 90%;
 }
@@ -37,9 +37,11 @@
 @media (min-width: 850px) {
     .Membership {
         flex-direction: row;
+        padding: 8rem 1rem 4rem;
     }
 
     .Text {
         margin-right: 1rem;
+        text-align: left;
     }
 }

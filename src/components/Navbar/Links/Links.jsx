@@ -2,7 +2,6 @@ import React from "react";
 
 import Link from "./Link/Link";
 import Logo from "../../UI/Logo/Logo";
-import RegisterButtons from "../../UI/RegisterButtons/RegisterButtons";
 
 import classes from "./Links.module.css";
 
@@ -16,7 +15,6 @@ const Links = ({setShow}) => {
             </div>
             <Link name="Membership" path="/membership" setShow={setShow} />
             <Link name="Contact" path="/contact" setShow={setShow} />
-            {/* <RegisterButtons /> */}
         </ul>
     );
 }

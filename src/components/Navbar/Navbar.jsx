@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 import Links from "./Links/Links";
+import LoginLogout from "../UI/LoginLogout/LoginLogout";
 import ToggleButton from "../UI/ToggleButton/ToggleButton";
 
 import classes from "./Navbar.module.css";
@@ -40,6 +41,7 @@ const Navbar = ({fixed, handleShow}) => {
                 <Links />
             </nav>
             <ToggleButton handleShow={handleShow} />
+            <LoginLogout />
         </div>
     );
 }

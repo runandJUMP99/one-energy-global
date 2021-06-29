@@ -1,0 +1,27 @@
+.LoginLogout a,
+.LoginLogout span {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    text-decoration: underline;
+    top: 28px;
+}
+
+.LoginLogout a:hover,
+.LoginLogout span:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 850px) {
+    .LoginLogout a,
+    .LoginLogout span {
+        opacity: 0.7;
+        top: 48px;
+    }
+    
+    .LoginLogout a:hover,
+    .LoginLogout span:hover {
+        opacity: 1;
+    }
+}

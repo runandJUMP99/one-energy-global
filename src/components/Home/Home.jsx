@@ -11,6 +11,7 @@ import SocialResp from "./SocialResp/SocialResp";
 import Volunteer from "./Volunteer/Volunteer";
 
 import classes from "./Home.module.css";
+import { ContactlessOutlined } from "@material-ui/icons";
 
 const Home = () => {
     return (

@@ -12,7 +12,7 @@ const SocialResp = () => {
                 <h2>Social Responsibility</h2>
                 <p>Our social responsibility is centered around <strong>community development</strong> through <strong>human services</strong>. We are effectively improving these communities through <strong>grassroots volunteer mobilization</strong>.</p>
                 <p>To increase our capacity we believe strongly in partnership. By establishing relationships with <strong>local churches, leaders, organizations, and governments in regions across the world,</strong> we make a direct impact in improving society in everyone's backyard.</p>
-                <Button>Get Involved</Button>
+                <Button path="/volunteer">Get Involved</Button>
             </div>
         </div>
     );

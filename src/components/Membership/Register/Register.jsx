@@ -1,19 +1,22 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux"
+import {Redirect} from "react-router-dom";
 
 import {TextField, Typography} from "@material-ui/core";
 
 import Button from "../../UI/Button/Button";
+import RedirectNotification from "./RedirectNotification/RedirectNotification";
 import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./Register.module.css";
 import {register, resetPassword} from "../../../store/actions/auth";
 //signInWithGoogle can be imported from ... ../auth
 
-const Register = () => {
+const Register = ({isRedirecting, setIsRedirecting}) => {
     const [emailSent, setEmailSent] = useState(false);
     const [isNewUser, setIsNewUser] = useState(false);
     const [isResettingPassword, setIsResettingPassword] = useState(false);
+    const [isSignedUp, setIsSignedUp] = useState(false);
     const [userData, setUserData] = useState({
         email: "",
         firstName: "",
@@ -33,10 +36,12 @@ const Register = () => {
             setEmailSent(true);
             setIsResettingPassword(false);
         } else {
+            console.log(userData);
             setEmailSent(false);
             dispatch(register(isNewUser, userData));
         }
 
+        setIsRedirecting(true);
         setUserData({
             email: "",
             firstName: "",
@@ -56,15 +61,16 @@ const Register = () => {
 
     return (
         <div className={classes.Register}>
-            {loading ? <Spinner />
-                : <>
+            {isSignedUp && <Redirect to="/" />} {/* redirects back to home page after user has logged in */}
+            {loading ? <Spinner /> : isRedirecting ? <RedirectNotification setIsRedirecting={setIsRedirecting} setIsSignedUp={setIsSignedUp} /> :
+                <>
                     <Typography align="center" variant="h6">
                         {isResettingPassword ? "Enter the Email Linked to Your Account to Reset Your Password" : `Sign ${isNewUser ? "up" : "in"} for Access to Exclusive Content!`}
                     </Typography>
                      <p className={classes.Error}>{error}</p> {/*if there is an error, show error */}
                     {emailSent && <p className={classes.EmailSent}>Password Reset Email Sent!</p>} {/*only displayed if password reset has been requested */}
                     <form autoComplete="off" className={classes.Form} noValidate onSubmit={handleSubmit}>
-                        {isNewUser && 
+                        {isNewUser &&
                             <>
                                 <TextField 
                                     fullWidth 
