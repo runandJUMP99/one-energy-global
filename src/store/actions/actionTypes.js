@@ -8,3 +8,6 @@ export const AUTH_FAIL = "AUTH_FAIL";
 export const GET_USERS = "GET_USERS";
 export const EDIT_USER = "EDIT_USER";
 export const DELETE_USER = "DELETE_USER";
+
+export const SHOW_MODAL = "SHOW_MODAL";
+export const SET_MODAL_CONTENT = "SET_MODAL_CONTENT";

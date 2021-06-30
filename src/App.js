@@ -18,7 +18,6 @@ import {authCheckState} from "./store/actions/auth";
 
 function App() {
   const [show, setShow] = useState(false);
-  const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,7 +32,9 @@ function App() {
     <BrowserRouter>
       <Backdrop handleShow={handleShow} show={show} />
       <SideDrawer show={show} setShow={setShow} />
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <Modal>
+
+      </Modal>
       <Navbar fixed={true} handleShow={handleShow} />
       <Navbar fixed={false} handleShow={handleShow} />
       <Suspense fallback="Loading...">
