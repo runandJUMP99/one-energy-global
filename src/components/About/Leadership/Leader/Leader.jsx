@@ -1,10 +1,25 @@
 import React from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+import LeaderBio from "./LeaderBio/LeaderBio";
 
 import classes from "./Leader.module.css";
+import {setModalContent, setShowModal} from "../../../../store/actions/modal";
 
-const Leader = ({img, name, title}) => {
+const Leader = ({bio1, bio2, img, name, title}) => {
+    const dispatch = useDispatch();
+
     function handleClick() {
-        console.log("clicked");
+        dispatch(setModalContent(
+            <LeaderBio 
+                bio1={bio1}
+                bio2={bio2}
+                img={img}
+                name={name}
+                title={title}
+            />
+        ));
+        dispatch(setShowModal(true));
     }
 
     if (!img) {

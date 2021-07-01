@@ -1,6 +1,6 @@
 import * as actionTypes from "../actions/actionTypes";
 
-export const showModal = (show) => async(dispatch) => {
+export const setShowModal = (show) => async(dispatch) => {
     dispatch({type: actionTypes.SHOW_MODAL, payload: show});
 };
 

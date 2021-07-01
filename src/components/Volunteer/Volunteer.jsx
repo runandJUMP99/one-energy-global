@@ -10,16 +10,17 @@ import Operations from "./Operations/Operations";
 import SupportPositions from "./Support/Support";
 
 import classes from "./Volunteer.module.css";
+import positions from "../../assets/data/voluteerPositions";
 
 const Volunteer = () => {
     return (
         <div className={classes.Volunteer}>
             <Jumbotron />
             <General />
-            <Operations />
-            <SupportPositions />
-            <Coordinators />
-            <Creative />
+            <Operations positions={positions.operations} />
+            <SupportPositions positions={positions.support} />
+            <Coordinators positions={positions.coordinators} />
+            <Creative positions={positions.creative} />
             <CTASection />
             <Newsletter />
         </div>

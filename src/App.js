@@ -32,9 +32,7 @@ function App() {
     <BrowserRouter>
       <Backdrop handleShow={handleShow} show={show} />
       <SideDrawer show={show} setShow={setShow} />
-      <Modal>
-
-      </Modal>
+      <Modal />
       <Navbar fixed={true} handleShow={handleShow} />
       <Navbar fixed={false} handleShow={handleShow} />
       <Suspense fallback="Loading...">

@@ -1,0 +1,41 @@
+.LeaderBio {
+    padding: 0 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.LeaderBio img {
+    border-radius: 50%;
+    height: 8rem;
+    margin-top: 1.5rem;
+    object-fit: cover;
+    width: 8rem;
+}
+
+.LeaderBio h1 {
+    color: var(--highlight);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.LeaderBio h3 {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.LeaderBio p {
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+}
+
+.Frame {
+    border: 4px solid var(--cta);
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}

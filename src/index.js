@@ -8,10 +8,12 @@ import './index.css';
 import App from './App';
 
 import authReducer from "./store/reducers/auth";
+import modalReducer from "./store/reducers/modal";
 import usersReducer from "./store/reducers/users";
 
 const reducers = combineReducers({
   auth: authReducer,
+  modal: modalReducer,
   users: usersReducer
 });
 

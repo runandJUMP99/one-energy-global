@@ -1,0 +1,9 @@
+.Highlights {
+    align-items: center;
+    display: flex;
+    justify-content: center;;
+    margin: auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+    width: 90%;
+}

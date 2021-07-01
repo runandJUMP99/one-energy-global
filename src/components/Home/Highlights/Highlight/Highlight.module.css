@@ -1,0 +1,13 @@
+.Highlight {
+    border-radius: 16px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
+    cursor: pointer;
+    height: 8rem;
+    margin: 1rem;
+    transition: all 0.3s linear;
+    width: 12rem;
+}
+
+.Highlight:hover {
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5) inset;
+}

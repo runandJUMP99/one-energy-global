@@ -3,6 +3,7 @@ import React from "react";
 import CTASection from "../Global/CTASection/CTASection";
 import CultureCode from "./CultureCode/CultureCode";
 import Directors from "./Directors/Directors";
+import Highlights from "./Highlights/Highlights";
 import Intro from "./Intro/Intro";
 import Investment from "./Investment/Investment";
 import Jumbotron from "./Jumbotron/Jumbotron";
@@ -17,6 +18,7 @@ const Home = () => {
     return (
         <div className={classes.Home}>
             <Jumbotron />
+            <Highlights />
             <Intro />
             <CultureCode />
             <SocialResp />

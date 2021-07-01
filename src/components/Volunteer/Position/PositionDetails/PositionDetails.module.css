@@ -1,0 +1,72 @@
+.PositionDetails {
+    padding: 0.5rem 2rem;
+    position: relative;
+}
+
+.PositionDetails img {
+    border-radius: 50%;
+    height: 8rem;
+    margin-top: 1.5rem;
+    object-fit: cover;
+    width: 8rem;
+}
+
+.PositionDetails h1 {
+    color: var(--highlight);
+    font-size: 2.5rem;
+    margin: 0rem;
+    text-align: center;
+}
+
+.PositionDetails h3 {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.PositionDetails p {
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+}
+
+.Text {
+
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.Text p {
+    margin: 0;
+    padding: 0;
+    width: 47.5%;
+}
+
+.Text ul {
+    font-style: italic;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 47.5%;
+}
+
+.Text li {
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+  
+.Text li::before {
+    content: "• ";
+    color: var(--highlight);
+}
+
+.Frame {
+    border: 4px solid var(--cta);
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
