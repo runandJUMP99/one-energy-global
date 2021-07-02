@@ -34,9 +34,7 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
         if (isResettingPassword) {
             dispatch(resetPassword(userData.email));
             setEmailSent(true);
-            setIsResettingPassword(false);
         } else {
-            console.log(userData);
             setEmailSent(false);
             dispatch(register(isNewUser, userData));
         }
@@ -62,7 +60,12 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
     return (
         <div className={classes.Register}>
             {isSignedUp && <Redirect to="/" />} {/* redirects back to home page after user has logged in */}
-            {loading ? <Spinner /> : isRedirecting ? <RedirectNotification setIsRedirecting={setIsRedirecting} setIsSignedUp={setIsSignedUp} /> :
+            {loading ? <Spinner /> : isRedirecting ? <RedirectNotification 
+                isResettingPassword={isResettingPassword}
+                setIsRedirecting={setIsRedirecting}
+                setIsSignedUp={setIsSignedUp}
+                setIsResettingPassword={setIsResettingPassword}
+            /> :
                 <>
                     <Typography align="center" variant="h6">
                         {isResettingPassword ? "Enter the Email Linked to Your Account to Reset Your Password" : `Sign ${isNewUser ? "up" : "in"} for Access to Exclusive Content!`}
@@ -131,7 +134,7 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
                         <p className={classes.ForgotPassword} onClick={() => setIsResettingPassword(prevValue => !prevValue)}>
                             {isResettingPassword ? "Back to login" : (!isNewUser && "Forgot password?")}
                         </p>
-                        <Button>Sign Up!</Button>
+                        <Button>{isNewUser ? "Sign Up" : isResettingPassword ? "Send" : "Sign In"}</Button>
                         {!isResettingPassword && //if user is resetting password, this text should not be displayed
                             <p className={classes.Switch}>
                                 {!isNewUser ? "Don't have an account? " : "Already signed up? "} 
@@ -150,5 +153,5 @@ export default Register;
 
 //GOOGLE SIGN IN
 
-{/* <button className={classes.Google} onClick={() => dispatch(signInWithGoogle())}><i className="fab fa-google"></i> Sign In With Google</button>
-<p className={classes.Divider}>-OR-</p> */}
+// {/* <button className={classes.Google} onClick={() => dispatch(signInWithGoogle())}><i className="fab fa-google"></i> Sign In With Google</button>
+// <p className={classes.Divider}>-OR-</p> */}

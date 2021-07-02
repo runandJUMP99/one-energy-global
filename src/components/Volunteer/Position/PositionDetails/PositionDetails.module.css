@@ -1,5 +1,5 @@
 .PositionDetails {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     position: relative;
 }
 
@@ -30,28 +30,27 @@
 }
 
 .Text {
-
+    align-items: center;
     display: flex;
+    flex-direction: column;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
 .Text p {
     margin: 0;
     padding: 0;
-    width: 47.5%;
 }
 
 .Text ul {
     font-style: italic;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 47.5%;
+    margin: 1rem 0.25rem 0;
+    padding: 0 0 0.25rem;
 }
 
 .Text li {
-    padding-left: 1em; 
     text-indent: -.7em;
 }
   
@@ -60,13 +59,23 @@
     color: var(--highlight);
 }
 
-.Frame {
-    border: 4px solid var(--cta);
-    height: 100%;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+@media (min-width: 850px) {
+    .Text {
+        align-items: flex-start;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .Text p {
+        width: 47.5%;
+    }
+
+    .Text ul {
+        margin: 0;
+        width: 47.5%;
+    }
+
+    .Text li {
+        padding-left: 1.25rem; 
+    }
 }

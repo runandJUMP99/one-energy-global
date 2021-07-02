@@ -12,7 +12,8 @@ const Management = ({leaders}) => {
             <Divider />
             <div className={classes.Leaders}>
                 {leaders.map(leader => (
-                    <Leader 
+                    <Leader
+                        key={leader.name}
                         bio1={leader.bio1}
                         bio2={leader.bio2}
                         img={leader.img}

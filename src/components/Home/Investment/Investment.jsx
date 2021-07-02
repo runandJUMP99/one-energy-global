@@ -1,7 +1,5 @@
 import React from "react";
 
-import Divider from "../../UI/Divider/Divider";
-
 import classes from "./Investment.module.css";
 
 const Investment = () => {

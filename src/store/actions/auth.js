@@ -5,7 +5,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 export const register = (isNewUser, user) => async(dispatch) => {
-    try {console.log(user);
+    try {
         dispatch({type: actionTypes.AUTH_START});
 
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
@@ -40,7 +40,6 @@ export const register = (isNewUser, user) => async(dispatch) => {
         }
         
         const token = await firebase.auth().currentUser.getIdToken(true);
-        console.log(user);
         const userData = {
             email: currentUser.email,
             firstName: currentUser.displayName,

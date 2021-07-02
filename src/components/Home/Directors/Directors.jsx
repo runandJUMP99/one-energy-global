@@ -11,7 +11,7 @@ const Directors = () => {
             <div className={classes.DirectorsGroup}>
                 <Director name="Nasaiah Hopkins" title="Chairman" />
                 <Director name="Grace Amponsah" title="Treasurer" />
-                <Director name="Caleb Duah" title="Board Member" />
+                <Director name="Caleb Duah" title="President" />
                 <Director name="Marcanthony Lozano" title="Board Member" />
                 <Director name="Marc Caccavelli" title="Board Member" />
                 <Director name="Heather Lagone" title="Board Member" />

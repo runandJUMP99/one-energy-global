@@ -13,6 +13,7 @@ const Coordinators = ({positions}) => {
             <div className={classes.Positions}>
                 {positions.map(position => (
                     <Position 
+                        key={position.title}
                         bullets={position.bullets}
                         descriptionLong={position.descriptionLong}
                         descriptionShort={position.descriptionShort}

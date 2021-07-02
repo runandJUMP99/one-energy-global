@@ -3,17 +3,20 @@ import {NavLink} from "react-router-dom";
 
 import classes from "./Button.module.css";
 
-const Button = ({children, path, style}) => {
+const Button = ({children, onClick, path, style}) => {
     let content = (
-        <button className={classes.Button} style={style}>
+        <button className={classes.Button} onClick={onClick} style={style}>
             {children}
         </button>
     );
     
     if (path) {
+        style = {
+            padding: 0
+        };
         content = (
-            <button className={classes.Button} style={style}>
-                <NavLink to={path}>{children}</NavLink>
+            <button className={classes.Button} onClick={onClick} style={style}>
+                <NavLink to={path} style={{padding: "0.75rem 1.5rem"}}>{children}</NavLink>
             </button>
         );
     }

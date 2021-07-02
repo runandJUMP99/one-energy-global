@@ -13,6 +13,7 @@ const BoardOfDirectors = ({leaders}) => {
             <div className={classes.Leaders}>
                 {leaders.map(leader => (
                     <Leader
+                        key={leader.name}
                         bio1={leader.bio1}
                         bio2={leader.bio2}
                         img={leader.img}

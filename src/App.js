@@ -30,7 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Backdrop handleShow={handleShow} show={show} />
+      <Backdrop handleShow={handleShow} setShow={setShow} show={show} />
       <SideDrawer show={show} setShow={setShow} />
       <Modal />
       <Navbar fixed={true} handleShow={handleShow} />

@@ -11,8 +11,8 @@ const Link = ({name, path, setShow}) => {
     }
 
     return (
-        <li className={classes.Link} onClick={handleClick}>
-            <NavLink to={path}>{name}</NavLink>
+        <li className={classes.Link}>
+            <NavLink onClick={handleClick} to={path}>{name}</NavLink>
         </li>
     );
 }

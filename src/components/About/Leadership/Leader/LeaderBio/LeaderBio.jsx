@@ -1,14 +1,14 @@
 import React from "react";
 
 import Divider from "../../../../UI/Divider/Divider";
+import Frame from "../../../../UI/Frame/Frame";
 
 import classes from "./LeaderBio.module.css";
 
 const LeaderBio  = ({bio1, bio2, img, name, title}) => {
-    console.log(bio1, bio2);
     return (
         <div className={classes.LeaderBio}>
-            <div className={classes.Frame}></div>
+            <Frame />
             <img src={img} alt={name} />
             <h1>{name}</h1>
             <h3>{title}</h3>
