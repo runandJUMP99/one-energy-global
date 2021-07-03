@@ -9,7 +9,7 @@
     padding: 0.5rem;
     position: relative;
     transition: all 0.7s linear;
-    width: 12rem;
+    width: 14rem;
 }
 
 .Highlight:hover {
@@ -25,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     transition: all 0.7s linear;
+    width: 100%;
 }
 
 .Text {
@@ -53,7 +54,6 @@
 }
 
 .ComingSoon {
-    /* color: var(--highlight); */
     color: #bff4ff;
     opacity: 0;
     position: absolute;

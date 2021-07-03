@@ -1,7 +1,29 @@
 .Form {
+
     margin: auto;
     max-width: 450px;
     text-align: center;
+}
+
+.Form img {
+    animation: appear 1s ease-out;
+    margin: 2rem auto 0;
+    max-width: 250px;
+    width: 100%;
+}
+
+.Form p {
+    color: var(--highlight);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Confirm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (min-width: 850px) {
@@ -9,5 +31,14 @@
         margin: initial;
         margin-left: 1rem;
         text-align: left;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 
 import classes from "./Logo.module.css";
-import logo from "../../../assets/images/logo.png"
+import logoDark from "../../../assets/images/logoDark.png"
 
 const Logo = ({setShow}) => {
     function handleClick() {
@@ -17,7 +17,7 @@ const Logo = ({setShow}) => {
                 alt="Logo"
                 className={classes.Logo}
                 onClick={handleClick}
-                src={logo}
+                src={logoDark}
             />
         </NavLink>
     );
