@@ -19,7 +19,7 @@ const CultureCode = () => {
                     <li><strong>Quality</strong> is our promise</li>
                     <li><strong>Generosity</strong> is our impact</li>
                 </ul>
-                <Button path="/about">Learn More</Button>
+                <Button path="/about" style={{marginLeft: 0}}>Learn More</Button>
             </div>
             <img src="https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/workplace-team-business-meeting.jpg?alt=media&token=014f980e-2908-4bd0-b356-b2fde1aca2c1" alt="Business Meeting" />
         </div>

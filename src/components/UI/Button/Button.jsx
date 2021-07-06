@@ -9,9 +9,10 @@ const Button = ({children, onClick, path, style}) => {
             {children}
         </button>
     );
-    
+
     if (path) {
         style = {
+            ...style,
             padding: 0
         };
         content = (

@@ -1,5 +1,6 @@
 .Jumbotron {
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/homepageJumboStatic.png?alt=media&token=1dc5b8f0-813b-4926-84d9-9adb482e4c2c") 50%/cover no-repeat border-box;
     color: white;
     margin: auto;
     overflow: hidden;
@@ -19,11 +20,7 @@
 }
 
 .Video {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: -1; 
+    display: none;
 }
 
 .Buttons {
@@ -38,6 +35,9 @@
 }
 
 .LearnMore a {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     border: 2px solid white;
     border-radius: 32px;
     color: white;
@@ -61,6 +61,21 @@
     
     .Jumbotron p {
         font-size: var(--secondary-text);
+    }
+}
+
+@media (min-width: 850px) {
+    .Jumbotron {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .Video {
+        bottom: 0;
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1; 
     }
 }
 

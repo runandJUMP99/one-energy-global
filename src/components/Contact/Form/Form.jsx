@@ -44,7 +44,7 @@ const Form = () => {
                     <form onSubmit={methods.handleSubmit((data) => handleSubmit(data))}>
                         <Grid container spacing={3}>
                             <Input required name="name" label="Name" size={12} variant="filled" />
-                            <Input required name="email" label="Email" size={12} variant="filled" />
+                            <Input required name="email" label="Email" size={12} type="email" variant="filled" />
                             <Input required name="phone" label="Phone Number" size={12} variant="filled" />
                             <Input required name="message" label="Message" multiline={true} size={12} variant="filled" />
                         </Grid>

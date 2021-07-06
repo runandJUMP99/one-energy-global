@@ -3,6 +3,7 @@
     border: 4px solid var(--cta);
     margin: auto;
     max-width: 1300px;
+    padding: 1rem 0;
 }
 
 .ExecutiveLeadership h2 {

@@ -1,4 +1,7 @@
 .ButtonSecondary {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     background: white;
     border: 2px solid var(--cta);
     border-radius: 32px;

@@ -17,7 +17,6 @@ const CTASection = () => {
 
     return (
         <div className={classes.CTASection}>
-            <div className={classes.Backdrop}></div>
             <div className={classes.Text}>
                 <h1>None of this would be possible without the donations and contributions of our members and volunteers.</h1>
                 <p>Find out how you can make an impact.</p>

@@ -16,6 +16,11 @@
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3) inset;
 }
 
+.Highlight a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .Highlight svg {
     color: var(--cta);
 }
@@ -54,10 +59,13 @@
 }
 
 .ComingSoon {
-    color: #bff4ff;
+    /* color: #bff4ff; */
+    color: white;
+    margin: 0;
     opacity: 0;
     position: absolute;
     text-align: center;
+    top: 0.5rem;
     transform: translateY(2rem);
     transition: all 0.7s ease-out;
     width: 90%;

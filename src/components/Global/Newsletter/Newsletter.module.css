@@ -6,10 +6,15 @@
 .Newsletter h2 {
     color: initial !important;
     font-size: 1.5rem !important;
+    margin-bottom: 1.5rem;
 }
 
 .Socials {
     margin-top: 1.5rem;
+}
+
+.Socials a {
+    color: inherit;
 }
 
 .Social {

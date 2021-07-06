@@ -72,10 +72,10 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
                     </Typography>
                      <p className={classes.Error}>{error}</p> {/*if there is an error, show error */}
                     {emailSent && <p className={classes.EmailSent}>Password Reset Email Sent!</p>} {/*only displayed if password reset has been requested */}
-                    <form autoComplete="off" className={classes.Form} noValidate onSubmit={handleSubmit}>
+                    <form autoComplete="off" className={classes.Form} onSubmit={handleSubmit}>
                         {isNewUser &&
                             <>
-                                <TextField 
+                                <TextField
                                     fullWidth 
                                     label="First Name"
                                     margin="normal"
@@ -85,7 +85,7 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
                                     value={userData.firstName}
                                     variant="outlined"
                                 />
-                                <TextField 
+                                <TextField
                                     fullWidth 
                                     label="Last Name"
                                     margin="normal" 
@@ -95,19 +95,18 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
                                     value={userData.lastName}
                                     variant="outlined"
                                 />
-                                <TextField 
+                                <TextField
                                     fullWidth 
-                                    label="Phone Number"
+                                    label="Phone Number (Optional)"
                                     margin="normal" 
                                     name="phone"
                                     onChange={(event) => setUserData({...userData, phone: event.target.value})} 
-                                    required
                                     value={userData.phone}
                                     variant="outlined"
                                 />
                             </>
                         }
-                        <TextField 
+                        <TextField
                             fullWidth 
                             label="Email"
                             margin="normal" 
@@ -119,7 +118,7 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
                             variant="outlined"
                         />
                         {!isResettingPassword && 
-                            <TextField 
+                            <TextField
                                 fullWidth 
                                 label="Password"
                                 margin="normal" 

@@ -9,7 +9,7 @@ const Directors = () => {
         <div className={classes.Directors}>
             <h1>Our Board of Directors</h1>
             <div className={classes.DirectorsGroup}>
-                <Director name="Nasaiah Hopkins" title="Chairman" />
+                <Director name="Nasaiah Hoskins" title="Chairman" />
                 <Director name="Grace Amponsah" title="Treasurer" />
                 <Director name="Caleb Duah" title="President" />
                 <Director name="Marcanthony Lozano" title="Board Member" />

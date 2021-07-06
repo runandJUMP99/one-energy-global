@@ -9,9 +9,9 @@ const FooterLinks = () => {
         <ul className={classes.FooterLinks}>
             <FooterLink name="Home" path="/" />
             <FooterLink name="About"path="/about" />
-            <FooterLink name="Projects"path="/projects" />
+            <FooterLink name="Volunteer"path="/volunteer" />
+            <FooterLink name="Membership"path="/membership" />
             <FooterLink name="Contact"path="/contact" />
-            <FooterLink name="Get Involved"path="/getinvolved" />
         </ul>
     );
 }

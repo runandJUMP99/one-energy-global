@@ -8,10 +8,10 @@ const Intro = () => {
     return (
         <div className={classes.Intro}>
             <div className={classes.Content}>
-                <h2>Our Mission</h2>
+                <h2>Our Vision</h2>
                 <Divider />
                 <img src="https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/business-idea-growth.jpg?alt=media&token=e83bcd5b-88e3-41de-a025-4ec44ac8c121" alt="Business-Idea-Growth" />
-                <p>Our mission is to use every means of mass media to provide our members with <strong>personal development media</strong> and <strong>affordable services</strong>.</p>
+                <p>Our vision is to be the largest family-based organization, preparing the younger generation and training a seasoned generation to fulfill purpose.</p>
             </div>
         </div>
     );

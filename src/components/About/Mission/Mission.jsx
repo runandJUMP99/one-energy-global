@@ -9,7 +9,7 @@ const Mission = () => {
         <div className={classes.Mission}>
             <h2>Our Mission</h2>
             <Divider />
-            <p>Our mission is to use every means of mass media to provide our members with personal development content and affordable services that will advance them so they can help advance others.</p>
+            <p>Our mission is to use every means of mass media to provide our members with personal development content and affordable services.</p>
         </div>
     );
 }

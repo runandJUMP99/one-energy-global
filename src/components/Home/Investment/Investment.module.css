@@ -1,5 +1,7 @@
 .Investment {
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/homepageInvestmentStatic.png?alt=media&token=d73ceff7-cd14-4d49-9ce3-70b0d9790223") 35%/cover no-repeat border-box;
+    background-attachment: fixed;
     overflow: hidden;
     padding: 2rem 1rem;
     position: relative;
@@ -63,6 +65,10 @@
 }
 
 @media (min-width: 1000px) {
+    .Investment {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
     .Investment img {
         margin-left: 1rem;
         width: 40%;

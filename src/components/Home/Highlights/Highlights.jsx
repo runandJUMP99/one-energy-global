@@ -15,7 +15,7 @@ const Highlights = () => {
             <Highlight
                 active={false}
                 icon={<HearingIcon fontSize="large" />}
-                locked={false}
+                locked={true}
                 subtitle="Inspiration for your ears"
                 title="Podcasts"
             />

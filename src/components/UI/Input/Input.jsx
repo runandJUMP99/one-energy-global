@@ -3,7 +3,7 @@ import {useFormContext, Controller} from "react-hook-form";
 
 import {TextField, Grid} from "@material-ui/core";
 
-const Input = ({label, multiline, name, required, size, variant}) => {
+const Input = ({label, multiline, name, required, size, type, variant}) => {
     const {control} = useFormContext();
     return (
         <Grid item xs={12} sm={size ? size : 6}>
@@ -15,6 +15,7 @@ const Input = ({label, multiline, name, required, size, variant}) => {
                 name={name}
                 label={label}
                 required={required}
+                type={type}
             />
         </Grid>
     );

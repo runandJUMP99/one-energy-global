@@ -48,7 +48,7 @@ const leadershipData  = {
             bio2: "",
             img: "",
             name: "James Williams",
-            title: "Senior Vice President One Energy Sports"
+            title: "Track & Field Commissioner"
         }
     ],
     boardOfDirectors: [{

@@ -11,7 +11,7 @@ const ContactInfo = () => {
             <h2>Contact Us</h2>
             <p>For all media, project, or general inquiries, please contact us!</p>
             <p>Business Hours: Mon-Fri (9-5pm)</p>
-            <a href="mailto:info@oneenergyglobal.org"><EmailIcon />info@oneenergyglobal.org</a>
+            <a href="mailto:member@oneenergyglobal.org"><EmailIcon />member@oneenergyglobal.org</a>
             <a href="tel:570-431-9530"><PhoneIcon />(570) 431-9530</a>
         </div>
     );
