@@ -1,4 +1,6 @@
 .Newsletter {
+    margin: auto;
+    max-width: 700px;
     padding: 4rem 1rem;
     text-align: center;
 }
@@ -6,6 +8,7 @@
 .Newsletter h2 {
     color: initial !important;
     font-size: 1.5rem !important;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 

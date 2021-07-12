@@ -1,0 +1,41 @@
+.Subscribe {
+    margin: auto;
+    max-width: 350px;
+}
+
+.Subscribe input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.Subscribe button {
+    background: #16697a;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.Subscribe button:hover {
+    background: #21889c;
+}
+
+@media(min-width: 850px) {
+    .Subscribe form {
+        align-items: stretch;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Subscribe input {
+        width: 65%;
+    }
+
+    .Subscribe button {
+        margin-top: 0;
+        width: 30%;
+    }
+}

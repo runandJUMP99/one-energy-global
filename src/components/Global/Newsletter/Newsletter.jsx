@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 // import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -7,14 +7,17 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // import YouTubeIcon from '@material-ui/icons/YouTube';
 
 import ButtonSecondary from "../../UI/ButtonSecondary/ButtonSecondary";
+import Subscribe from "../../Global/Newsletter/Subscribe/Subscribe";
 
 import classes from "./Newsletter.module.css";
 
 const Newsletter = () => {
+    const [clicked, setClicked] = useState(false);
+
     return (
         <div className={classes.Newsletter}>
             <h2>Keep up to date on our current projects by subscribing to our newsletter!</h2>
-            <ButtonSecondary>Subscribe</ButtonSecondary>
+            {clicked ? <Subscribe /> : <ButtonSecondary onClick={() => setClicked(true)}>Subscribe</ButtonSecondary>}
             <div className={classes.Socials}>
                 {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/oneenergyglobalinc"><FacebookIcon className={classes.Social} fontSize="large" /></a> */}
                 {/* <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/oneenergyglobe"><TwitterIcon className={classes.Social} fontSize="large" /></a> */}
