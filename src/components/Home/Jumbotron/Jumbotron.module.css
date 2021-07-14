@@ -49,9 +49,9 @@
 }
 
 .LearnMore a:hover {
-    background: var(--cta);
-    border: 2px solid var(--cta);
-    color: white;
+    background: white;
+    border: 2px solid white;
+    color: var(--cta);
 }
 
 @media (min-width: 720px) {

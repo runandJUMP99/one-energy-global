@@ -1,0 +1,31 @@
+.Tier {
+    background: #e7e7e7;
+    border-radius: 48px 0 48px 0;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
+    max-width: 20rem;
+    padding: 2.5rem 3rem;
+    width: 30%;
+}
+
+.Tier p {
+    font-size: 1.25rem;
+}
+
+.Tier ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Tier li {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.Tier svg {
+    color: var(--cta);
+    margin-top: 0.2rem;
+    padding-right: 0.25rem;
+}
