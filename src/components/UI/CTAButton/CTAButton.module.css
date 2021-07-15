@@ -9,7 +9,7 @@
     padding: none;
 }
 
-.Link {
+.CTAButton a {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -21,7 +21,7 @@
     transition: all 0.25s ease-out;
 }
 
-.Link:hover {
+.CTAButton a:hover {
     background: white;
     border: 2px solid white;
     color: var(--cta);

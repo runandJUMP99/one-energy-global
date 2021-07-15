@@ -6,5 +6,21 @@
     margin: auto;
     max-width: 1200px;
     padding: 2rem 0;
-    width: 90%;
+}
+
+@media (min-width: 475px) {
+    .Highlights {
+        /* width: 90%; */
+    }
+
+    .HighlightGroup {
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+}
+
+@media (min-width: 1040px) {
+    .Highlight {
+        
+    }
 }

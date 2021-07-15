@@ -2,22 +2,34 @@ const tiers  = [
     {
         description: "",
         highlights: [
-            "Weekly podcasts",
-            "Up to date on current projects",
-            "Weekly Newsletter"
+            "Exclusive access to full podcast episodes",
+            "Access to monthly Career Workshops",
+            "Ogranization Updates"
         ],
-        name: "Standard",
+        name: "Free Membership",
         price: "FREE!"
+    },
+    {
+        description: "This is a Standard Membership Discount",
+        highlights: [
+            "All the previous perks",
+            "Tutoring",
+            "Counseling Options",
+            "Access to our Masterclass"
+        ],
+        name: "Student",
+        price: "$20 monthly / $215 annual"
     },
     {
         description: "",
         highlights: [
             "All the previous perks",
-            "One on one mentoring and counseling",
-            "Access to Master Classes taught by our thought leaders"
+            "Tutoring",
+            "Counseling Options",
+            "Access to our Masterclass"
         ],
-        name: "Premium",
-        price: "$5.99 / month"
+        name: "Standard",
+        price: "$25 monthly / $270 annual"
     },
     {
         description: "",
@@ -25,8 +37,8 @@ const tiers  = [
             "All the previous perks",
             "Up to 3 active accounts per family plan"
         ],
-        name: "Family",
-        price: "$9.99 / month"
+        name: "Family Bundle",
+        price: "$45 monthly / $520 annual"
     }
 ];
 

@@ -19,6 +19,6 @@
 .Jumbotron p {
     font-size: 1.25rem;
     line-height: 2;
-    margin: auto;
+    margin: 0 auto !important;
     width: 80%;
 }

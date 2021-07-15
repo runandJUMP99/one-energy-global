@@ -12,34 +12,38 @@ import classes from "./Highlights.module.css";
 const Highlights = () => {
     return (
         <div className={classes.Highlights}>
-            <Highlight
-                active={false}
-                icon={<HearingIcon fontSize="large" />}
-                locked={true}
-                subtitle="Inspiration for your ears"
-                title="Podcasts"
-            />
-            <Highlight
-                active={false}
-                icon={<CastForEducationIcon fontSize="large" />}
-                locked={true}
-                subtitle="Both online & in person"
-                title="Tutoring"
-            />
-            <Highlight
-                active={false}
-                icon={<AssignmentIcon fontSize="large" />}
-                locked={true}
-                subtitle="Available for all ages"
-                title="Counseling"
-            />
-            <Highlight
-                active={false}
-                icon={<ClassIcon fontSize="large" />}
-                locked={true}
-                subtitle="Learn from our best"
-                title="Master Class"
-            />
+            <div className={classes.HighlightGroup}>
+                <Highlight
+                    active={false}
+                    icon={<HearingIcon fontSize="large" />}
+                    locked={true}
+                    subtitle="Inspiration for your ears"
+                    title="Podcasts"
+                />
+                <Highlight
+                    active={false}
+                    icon={<CastForEducationIcon fontSize="large" />}
+                    locked={true}
+                    subtitle="Both online & in person"
+                    title="Tutoring"
+                />
+            </div>
+            <div className={classes.HighlightGroup}>
+                <Highlight
+                    active={false}
+                    icon={<AssignmentIcon fontSize="large" />}
+                    locked={true}
+                    subtitle="Available for all ages"
+                    title="Counseling"
+                />
+                <Highlight
+                    active={false}
+                    icon={<ClassIcon fontSize="large" />}
+                    locked={true}
+                    subtitle="Learn from our best"
+                    title="Master Class"
+                />
+            </div>
         </div>
     );
 }

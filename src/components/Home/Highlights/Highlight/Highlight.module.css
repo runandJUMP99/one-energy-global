@@ -5,15 +5,19 @@
     cursor: pointer;
     display: flex;
     height: 8rem;
-    margin: 1rem;
+    margin: 1rem 0.25rem;
     padding: 0.5rem;
     position: relative;
-    transition: all 0.7s linear;
-    width: 14rem;
+    transition: box-shadow 0.7s linear;
+    width: 11rem;
 }
 
 .Highlight:hover {
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+.Highlight h3 {
+    font-size: 1.25rem;
 }
 
 .Highlight a {
@@ -70,4 +74,15 @@
     transition: all 0.7s ease-out;
     width: 90%;
     z-index: 10;
+}
+
+@media (min-width: 500px) {
+    .Highlight {
+        margin: 1rem;
+        width: 14rem;
+    }
+
+    .Highlight h3 {
+        font-size: 1.75rem;
+    }
 }

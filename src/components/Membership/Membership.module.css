@@ -1,7 +1,7 @@
 .Membership {
     align-items: center;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/SocialResp.jpg?alt=media&token=e2113c21-99e7-4a7a-b5ce-2cf460823f31") 40%/cover no-repeat border-box;
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/SocialResp.jpg?alt=media&token=e2113c21-99e7-4a7a-b5ce-2cf460823f31") 70%/cover no-repeat border-box;
     display: flex;
     flex-direction: column;
     height: 100%;

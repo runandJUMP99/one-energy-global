@@ -10,6 +10,7 @@ const Tiers = () => {
         <div className={classes.Tiers}>
             {tiers.map(tier => (
                 <Tier
+                    key={tier.name}
                     highlights={tier.highlights}
                     name={tier.name}
                     price={tier.price}

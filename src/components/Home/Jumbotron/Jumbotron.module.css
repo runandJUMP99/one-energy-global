@@ -4,7 +4,7 @@
     color: white;
     margin: auto;
     overflow: hidden;
-    padding: 8rem 1rem 5rem;
+    padding: 8rem 0.5rem 5rem;
     position: relative;
     text-align: center;
 }
@@ -24,14 +24,19 @@
 }
 
 .Buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 2rem auto;
 }
 
 .LearnMore {
+    align-self: stretch;
     background: none;
     border: none;
     margin-bottom: 2rem;
-    padding: none;
+    padding: 0;
 }
 
 .LearnMore a {
@@ -43,7 +48,7 @@
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 3rem;
     text-decoration: none;
     transition: all 0.25s ease-out;
 }
@@ -52,6 +57,17 @@
     background: white;
     border: 2px solid white;
     color: var(--cta);
+}
+
+@media (min-width: 440px) {
+    .Buttons {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .LearnMore {
+        margin: 0 1rem 0 0;
+    }
 }
 
 @media (min-width: 720px) {

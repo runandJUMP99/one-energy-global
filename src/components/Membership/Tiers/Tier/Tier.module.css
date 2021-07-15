@@ -5,9 +5,9 @@
     flex-direction: column;
     height: 30rem;
     justify-content: space-between;
-    max-width: 20rem;
+    margin: 1rem;
     padding: 2.5rem 3rem;
-    width: 30%;
+    width: 20rem;
 }
 
 .Tier p {
@@ -28,4 +28,27 @@
     color: var(--cta);
     margin-top: 0.2rem;
     padding-right: 0.25rem;
+}
+
+.Tier button {
+    font-weight: bold;
+}
+
+.FamilyButton {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: var(--cta);
+    border: 2px solid white;
+    border-radius: 32px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.25s linear;
+}
+
+.FamilyButton:hover {
+    background: white;
+    color: var(--cta);
 }
