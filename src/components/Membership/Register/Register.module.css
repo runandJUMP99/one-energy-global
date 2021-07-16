@@ -73,9 +73,3 @@
     color: #666666;
     text-decoration: none;
 }
-
-@media (min-width: 850px) {
-    .Register {
-        margin-left: 1rem;
-    }
-}

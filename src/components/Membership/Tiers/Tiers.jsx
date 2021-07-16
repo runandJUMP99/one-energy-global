@@ -5,15 +5,17 @@ import Tier from "./Tier/Tier";
 import classes from "./Tiers.module.css";
 import tiers from "../../../assets/data/tiers";
 
-const Tiers = () => {
+const Tiers = ({handleNextStep}) => {
     return (
         <div className={classes.Tiers}>
             {tiers.map(tier => (
                 <Tier
                     key={tier.name}
+                    handleNextStep={handleNextStep}
                     highlights={tier.highlights}
                     name={tier.name}
                     price={tier.price}
+                    tier={tier.tier}
                 />
             ))}
         </div>

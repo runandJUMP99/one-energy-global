@@ -25,7 +25,7 @@ export const register = (isNewUser, user) => async(dispatch) => {
                 firstName: user.firstName,
                 lastName: user.lastName,
                 phone: user.phone,
-                tier: 1,
+                tier: user.tier,
                 userId: response.user.uid
             };
             

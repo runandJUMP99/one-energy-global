@@ -7,7 +7,8 @@ const tiers  = [
             "Ogranization Updates"
         ],
         name: "Free Membership",
-        price: "FREE!"
+        price: "FREE!",
+        tier: 1
     },
     {
         description: "This is a Standard Membership Discount",
@@ -18,7 +19,8 @@ const tiers  = [
             "Access to our Masterclass"
         ],
         name: "Student",
-        price: "$20 monthly / $215 annual"
+        price: "$20 monthly / $215 annual",
+        tier: 2
     },
     {
         description: "",
@@ -29,7 +31,8 @@ const tiers  = [
             "Access to our Masterclass"
         ],
         name: "Standard",
-        price: "$25 monthly / $270 annual"
+        price: "$25 monthly / $270 annual",
+        tier: 3
     },
     {
         description: "",
@@ -38,7 +41,8 @@ const tiers  = [
             "Up to 3 active accounts per family plan"
         ],
         name: "Family Bundle",
-        price: "$45 monthly / $520 annual"
+        price: "$45 monthly / $520 annual",
+        tier: 4
     }
 ];
 

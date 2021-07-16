@@ -1,20 +1,19 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux"
 import {Redirect} from "react-router-dom";
 
 import {TextField, Typography} from "@material-ui/core";
 
 import Button from "../../UI/Button/Button";
-import RedirectNotification from "./RedirectNotification/RedirectNotification";
 import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./Register.module.css";
 import {register, resetPassword} from "../../../store/actions/auth";
 //signInWithGoogle can be imported from ... ../auth
 
-const Register = ({isRedirecting, setIsRedirecting}) => {
+const Register = ({handleNextStep, newUser, tier}) => {
     const [emailSent, setEmailSent] = useState(false);
-    const [isNewUser, setIsNewUser] = useState(false);
+    const [isNewUser, setIsNewUser] = useState(true);
     const [isResettingPassword, setIsResettingPassword] = useState(false);
     const [isSignedUp, setIsSignedUp] = useState(false);
     const [userData, setUserData] = useState({
@@ -22,11 +21,22 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
         firstName: "",
         lastName: "",
         password: "",
-        phone: ""
+        phone: "",
+        tier: null
     });
     const error = useSelector(state => state.auth.error);
     const loading = useSelector(state => state.auth.loading)
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        setIsNewUser(newUser);
+        setUserData(prevValue => {
+            return {
+                ...prevValue,
+                tier: tier
+            }
+        });
+    }, [newUser, setIsNewUser]);
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -38,14 +48,14 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
             setEmailSent(false);
             dispatch(register(isNewUser, userData));
         }
-
-        setIsRedirecting(true);
+        
         setUserData({
             email: "",
             firstName: "",
             lastName: "",
             password: "",
-            phone: ""
+            phone: "",
+            tier: null
         });
     }
 
@@ -60,13 +70,8 @@ const Register = ({isRedirecting, setIsRedirecting}) => {
     return (
         <div className={classes.Register}>
             {isSignedUp && <Redirect to="/" />} {/* redirects back to home page after user has logged in */}
-            {loading ? <Spinner /> : isRedirecting ? <RedirectNotification 
-                isResettingPassword={isResettingPassword}
-                setIsRedirecting={setIsRedirecting}
-                setIsSignedUp={setIsSignedUp}
-                setIsResettingPassword={setIsResettingPassword}
-            /> :
-                <>
+            {loading ? <Spinner />
+                : <>
                     <Typography align="center" variant="h6">
                         {isResettingPassword ? "Enter the Email Linked to Your Account to Reset Your Password" : `Sign ${isNewUser ? "up" : "in"} for Access to Exclusive Content!`}
                     </Typography>

@@ -6,7 +6,7 @@ import ButtonSecondary from "../../../UI/ButtonSecondary/ButtonSecondary";
 
 import classes from "./Tier.module.css";
 
-const Tier = ({highlights, name, price}) => {
+const Tier = ({handleNextStep, highlights, name, price, tier}) => {
     return (
         <div className={classes.Tier} style={{background: name === "Family Bundle" && "var(--cta)", color: name === "Family Bundle" && "white"}}>
             <div className={classes.Top}>
@@ -22,8 +22,8 @@ const Tier = ({highlights, name, price}) => {
                 ))}
             </ul>
             {name === "Family Bundle"
-                ? <button className={classes.FamilyButton}>Choose Plan</button>
-                : <ButtonSecondary>Choose Plan</ButtonSecondary>
+                ? <button className={classes.FamilyButton} onClick={() => handleNextStep(tier)}>Choose Plan</button>
+                : <ButtonSecondary onClick={() => handleNextStep(tier)}>Choose Plan</ButtonSecondary>
             }
         </div>
     );
