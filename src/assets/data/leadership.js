@@ -6,17 +6,17 @@ const leadershipData  = {
             name: "Nasaiah Izon Hoskins",
             title: "Chairman and Chief Executive Officer, One Energy Global Inc."
         },{
+            bio1: "Diane Henry is a seasoned professional who brings over 25+ years of Human Resources experience. She serves as the manager of the Human Resource/Employee Relations department and is responsible for providing the Human Resources department support to multiple locations. Diane has held a variety of Senior Management Human Resource roles within various disciplines.",
+            bio2: "Prior, Diane was the Regional Field Human Resource Manager for Ryder Logistics. She provided support for 35 union and non-union accounts across the Northern and Southern regions of the US. Diane is currently pursuing her SPHR-CP. In her free time, she enjoys painting, traveling and spending quality time with her family.",
+            img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/HenryDiane.jpg?alt=media&token=d1d81991-cd67-4602-a9e3-3d875fbc828f",
+            name: "Diane Henry",
+            title: "Chief Human Resource Officer, One Energy Global Inc."
+        },{
             bio1: "As Chief Experience Officer (CXO), Caleb ensures membership and volunteer satisfaction, while also overseeing outreach. He brings years of entrepreneurship and health background to the company. Specializing in project development and sustainability, Caleb with the help of the board and other executives looks to expand and double the organization’s strategic outlook in all aspects. Caleb brings on a few years of leadership experience and an innovative mindset.",
             bio2: "",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/DuahCaleb.jpg?alt=media&token=99738ee3-0798-4d76-b0bd-c1cc4ab50be2",
             name: "Caleb Duah",
             title: "Chief Experience Officer, One Energy Global Inc."
-        },{
-            bio1: "",
-            bio2: "",
-            img: "",
-            name: "Diane Henry",
-            title: "Chief Human Resource Officer, One Energy Global Inc."
         },{
             bio1: "",
             bio2: "",

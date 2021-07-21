@@ -34,6 +34,10 @@
     font-weight: bold;
 }
 
+.Top p {
+    width: 60%;
+}
+
 .FamilyButton {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;

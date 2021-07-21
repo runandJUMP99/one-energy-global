@@ -21,10 +21,11 @@ const Tier = ({handleNextStep, highlights, name, price, tier}) => {
                     </li>
                 ))}
             </ul>
-            {name === "Family Bundle"
+            <ButtonSecondary>Coming Soon!</ButtonSecondary>
+            {/* {name === "Family Bundle"
                 ? <button className={classes.FamilyButton} onClick={() => handleNextStep(tier)}>Choose Plan</button>
                 : <ButtonSecondary onClick={() => handleNextStep(tier)}>Choose Plan</ButtonSecondary>
-            }
+            } */}
         </div>
     );
 }

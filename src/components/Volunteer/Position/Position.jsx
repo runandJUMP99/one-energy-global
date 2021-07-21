@@ -25,7 +25,7 @@ const Position = ({bullets, descriptionLong, descriptionShort, title}) => {
         <div className={classes.Position}>
             <h3>{title}</h3>
             <p>{descriptionShort}</p>
-            <ButtonSecondary onClick={handleClick} >Learn More</ButtonSecondary>
+            <ButtonSecondary onClick={handleClick}>Learn More</ButtonSecondary>
         </div>
     );
 }

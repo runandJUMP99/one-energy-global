@@ -1,8 +1,16 @@
 .RedirectNotification {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
+    height: 300px;
     justify-content: space-between;
-    height: 200px;
+    max-width: 450px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    width: 90%;
 }
 
 .RedirectNotification h3 {

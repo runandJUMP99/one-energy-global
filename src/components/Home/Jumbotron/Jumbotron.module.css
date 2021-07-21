@@ -19,7 +19,8 @@
     opacity: 0.7;
 }
 
-.Video {
+.Video,
+.Video source {
     display: none;
 }
 
@@ -92,6 +93,10 @@
         position: absolute;
         width: 100%;
         z-index: -1; 
+    }
+
+    .Video source {
+        display: initial;
     }
 }
 

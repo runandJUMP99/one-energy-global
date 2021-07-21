@@ -5,9 +5,9 @@ import classes from "./RedirectNotification.module.css";
 
 const RedirectNotification = ({isResettingPassword, setIsRedirecting, setIsResettingPassword, setIsSignedUp}) => {
     setTimeout(() => {
-        setIsRedirecting(false);
-        setIsResettingPassword(false);
-        setIsSignedUp(true);
+        // setIsRedirecting(false);
+        // setIsResettingPassword(false);
+        // setIsSignedUp(true);
     }, 3000);
 
     return (

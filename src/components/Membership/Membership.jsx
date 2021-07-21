@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+import Payment from "./Payment/Payment";
 import RedirectNotification from "./RedirectNotification/RedirectNotification";
 import Register from "./Register/Register";
 import Tiers from "./Tiers/Tiers";
@@ -12,6 +13,7 @@ const Membership = () => {
     const signupSteps = [
         <Tiers handleNextStep={handleNextStep} />,
         <Register handleNextStep={handleNextStep} newUser={true} tier={tier} />,
+        <Payment handleNextStep={handleNextStep} />,
         <RedirectNotification handleNextStep={handleNextStep} />
     ];
 

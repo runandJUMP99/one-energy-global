@@ -12,12 +12,9 @@
     width: 100%
 }
 
-.Video {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1; 
+.Video,
+.Video source {
+    display: none;
 }
 
 .Content {
@@ -59,9 +56,23 @@
         padding: 4rem 1rem;
     }
     
+    .Video {
+        display: initial;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1; 
+    }
+
+    .Video source {
+        display: initial;
+    }
+
     .Text p {
         font-size: var(--secondary-text);
     }
+
 }
 
 @media (min-width: 1000px) {
