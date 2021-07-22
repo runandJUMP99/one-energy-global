@@ -10,6 +10,7 @@ const BoardOfDirectors = ({leaders}) => {
         <div className={classes.BoardOfDirectors}>
             <h2>Board of Directors</h2>
             <Divider />
+            <p>The Board of Directors is a group of experts who are invested in the long-term success of the organization. The directors rise from global industries, which makes their knowledge, experience, and perspective that much more valuable.</p>
             <div className={classes.Leaders}>
                 {leaders.map(leader => (
                     <Leader

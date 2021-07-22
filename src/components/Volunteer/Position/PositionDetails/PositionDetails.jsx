@@ -1,14 +1,19 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 
 import Button from "../../../UI/Button/Button";
 import Divider from "../../../UI/Divider/Divider";
 import Frame from "../../../UI/Frame/Frame";
+import PositionForm from "./PositionForm/PositionForm";
 
 import classes from "./PositionDetails.module.css";
+import {setModalContent} from "../../../../store/actions/modal";
 
-const PositionDetails = ({bullets, descriptionLong, setModalContent, title}) => {
+const PositionDetails = ({bullets, descriptionLong, title}) => {
+    const dispatch = useDispatch();
+    
     function handleClick() {
-        
+        dispatch(setModalContent(<PositionForm />));
     }
 
     return (
@@ -24,7 +29,7 @@ const PositionDetails = ({bullets, descriptionLong, setModalContent, title}) => 
                     ))}
                 </ul>
             </div>
-            <Button onClick={handleClick}>Volunteer</Button>
+            {/* <Button onClick={handleClick}>Volunteer</Button> */}
         </div>
     );
 }

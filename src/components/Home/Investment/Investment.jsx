@@ -5,9 +5,9 @@ import classes from "./Investment.module.css";
 const Investment = () => {
     return (
         <div className={classes.Investment}>
-            <video className={classes.Video} autoPlay loop muted>
+            {/* <video className={classes.Video} autoPlay loop muted>
                 <source src="https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/businessMeeting.mp4?alt=media&token=7b65bef9-040e-4460-ad46-04104e75fb53" type="video/mp4" />
-            </video>
+            </video> */}
             <div className={classes.Content}>
                 <div className={classes.Text}>
                     <h2>Investment Insight</h2>

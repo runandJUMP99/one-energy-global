@@ -1,24 +1,24 @@
-.Intro {
+.Vision {
     background: var(--background);
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
-.Intro h2 {
+.Vision h2 {
     color: var(--highlight);
     font-size: var(--secondary-header);
 }
 
-.Intro img {
+.Vision img {
     border-radius: 16px;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
     width: 60%;
 }
 
-.Intro p {
+.Vision p {
     color: var(--secondary-color);
     line-height: 1.5;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
     width: 90%
 }
 
@@ -28,15 +28,19 @@
 }
 
 @media (min-width: 850px) {
-    .Intro {
-        padding: 2rem 0;
+    .Vision {
+        padding: 4rem 0;
     }
 
-    .Intro img {
+    .Vision h2 {
+        font-size: var(--jumbo-text);
+    }
+
+    .Vision img {
         width: 40%;
     }
 
-    .Intro p {
+    .Vision p {
         line-height: 2;
         font-size: var(--secondary-text);
     }

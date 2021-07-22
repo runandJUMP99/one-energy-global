@@ -12,10 +12,10 @@
     width: 100%
 }
 
-.Video,
+/* .Video,
 .Video source {
     display: none;
-}
+} */
 
 .Content {
     display: flex;
@@ -76,9 +76,9 @@
 }
 
 @media (min-width: 1000px) {
-    .Investment {
+    /* .Investment {
         background: rgba(0, 0, 0, 0.6);
-    }
+    } */
 
     .Investment img {
         margin-left: 1rem;

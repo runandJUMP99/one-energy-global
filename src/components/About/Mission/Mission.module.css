@@ -8,12 +8,15 @@
 
 .Mission h2 {
     color: var(--highlight);
-    font-size: 2rem;
+    font-size: var(--secondary-header);
     margin: 1rem 0;
 }
 
 .Mission p {
-    font-size: var(--secondary-text);
+    color: var(--secondary-color);
+    line-height: 1.5;
+    margin: 0.5rem auto;
+    width: 90%
 }
 
 @media (min-width: 850px) {
@@ -23,5 +26,9 @@
     
     .Mission h2 {
         font-size: var(--jumbo-text);
+    }
+    
+    .Mission p {
+        font-size: var(--secondary-text);
     }
 }

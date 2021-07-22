@@ -1,0 +1,90 @@
+.PositionForm {
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+}
+
+.PositionForm img {
+    animation: appear 1s ease-out;
+    margin: 2rem auto 0;
+    max-width: 250px;
+    width: 100%;
+}
+
+.PositionFormContent {
+    display: flex;
+}
+
+.PositionFormContent form {
+    margin: auto;
+    text-align: center;
+}
+
+.PositionFormContent p {
+    color: var(--highlight);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Confirm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ContactInfo {
+    margin: 0 1rem 1rem;
+}
+
+.ContactInfo h2 {
+    color: var(--highlight);
+    margin-top: 0;
+}
+
+.ContactInfo a {
+    align-items: center;
+    color: var(--cta);
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+    position: relative;
+    right: 0.2rem;
+    text-decoration: none;
+}
+
+.ContactInfo a:hover {
+    color: var(--cta-hover);
+}
+
+.ContactInfo svg {
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 850px) {
+    .ContactInfo {
+        text-align: left;
+    }
+
+    .ContactInfo a {
+        justify-content: initial;
+    }
+}
+
+@media (min-width: 850px) {
+    .PositionForm {
+        margin: initial;
+        margin-left: 1rem;
+        text-align: left;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

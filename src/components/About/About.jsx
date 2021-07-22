@@ -6,6 +6,7 @@ import Departments from "./Departments/Departments";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Leadership from "./Leadership/Leadership";
 import Mission from "./Mission/Mission";
+import Vision from "./Vision/Vision";
 
 import classes from "./About.module.css";
 
@@ -14,8 +15,9 @@ const About = () => {
         <div className={classes.About}>
             <Jumbotron />
             <Mission />
-            <Departments />
+            <Vision />
             <Leadership />
+            <Departments />
             <CTASection />
             <Newsletter />
         </div>

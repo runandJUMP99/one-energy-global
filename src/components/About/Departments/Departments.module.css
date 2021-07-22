@@ -1,8 +1,20 @@
+.Departments {
+    padding: 4rem 0;
+    text-align: center;
+}
+
 .Departments h2 {
     color: var(--highlight);
     font-size: 2rem;
-    text-align: center;
 }
+
+.Description {
+    font-style: italic;
+    margin: 0 auto 2rem;
+    max-width: 700px;
+    width: 90%;
+}
+
 
 @media (min-width: 850px) {
     .Departments h2 {

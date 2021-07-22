@@ -10,6 +10,7 @@ const ExecutiveLeadership = ({leaders}) => {
         <div className={classes.ExecutiveLeadership}>
             <h2>Executive Leadership</h2>
             <Divider />
+            <p>One Energy’s leadership is a team of individuals who have proven themselves to be extraordinary leaders in their respective fields. Hailing from international and global companies, they have been driven to pioneer a modernized style of media, community, and organizational leadership.</p>
             <div className={classes.Leaders}>
                 {leaders.map(leader => (
                     <Leader
