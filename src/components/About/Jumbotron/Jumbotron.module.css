@@ -5,20 +5,20 @@
     color: white;
     margin: auto;
     padding: 9rem 0 6rem;
+    position: relative;
     text-align: center;
     width: 100%;
 }
 
 .Jumbotron h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin: 1rem auto;
     max-width: 800;
     width: 90%;
 }
 
-.Jumbotron p {
-    font-size: 1.25rem;
-    line-height: 2;
-    margin: auto;
-    width: 90%;
+@media (min-width: 850px) {
+    .Jumbotron h1 {
+        font-size: 4rem;
+    }
 }

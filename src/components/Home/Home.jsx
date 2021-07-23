@@ -6,6 +6,7 @@ import Directors from "./Directors/Directors";
 import Highlights from "./Highlights/Highlights";
 import Investment from "./Investment/Investment";
 import Jumbotron from "./Jumbotron/Jumbotron";
+import Mission from "./Mission/Mission";
 import Newsletter from "../Global/Newsletter/Newsletter";
 import SocialResp from "./SocialResp/SocialResp";
 import Volunteer from "./Volunteer/Volunteer";
@@ -17,6 +18,7 @@ const Home = () => {
         <div className={classes.Home}>
             <Jumbotron />
             <Highlights />
+            <Mission />
             <CultureCode />
             <SocialResp />
             <Volunteer />

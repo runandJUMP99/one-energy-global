@@ -1,30 +1,6 @@
 .PositionForm {
-    margin: auto;
-    max-width: 450px;
-    text-align: center;
-}
-
-.PositionForm img {
-    animation: appear 1s ease-out;
-    margin: 2rem auto 0;
-    max-width: 250px;
-    width: 100%;
-}
-
-.PositionFormContent {
-    display: flex;
-}
-
-.PositionFormContent form {
-    margin: auto;
-    text-align: center;
-}
-
-.PositionFormContent p {
-    color: var(--highlight);
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+    padding: 1rem;
+    position: relative;
 }
 
 .Confirm {
@@ -32,15 +8,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
-.ContactInfo {
-    margin: 0 1rem 1rem;
+.Confirm img {
+    animation: appear 1s ease-out;
+    margin: 2rem auto 0;
+    max-width: 250px;
+    padding-left: 1.8rem;
+    width: 100%;
+}
+
+.Confirm p {
+    color: var(--highlight);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.PositionFormContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .ContactInfo h2 {
     color: var(--highlight);
-    margin-top: 0;
 }
 
 .ContactInfo a {
@@ -62,21 +55,53 @@
     margin-right: 0.5rem;
 }
 
-@media (min-width: 850px) {
-    .ContactInfo {
+.Greeting {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.Hours {
+    margin: 0.5rem 0;
+}
+
+.DividerLarge {
+    display: none;
+}
+
+.FileInput {
+    padding: 0 12px;
+}
+
+.FileLabel {
+    font-size: 0.6rem;
+    padding: 0 12px;
+}
+
+@media (min-width: 700px) {
+    .PositionFormContent {
+        flex-direction: row;
+        justify-content: space-between;
         text-align: left;
+    }
+
+    .PositionFormContent form {
+        width: 47%;
+    }
+
+    .ContactInfo {
+        width: 47%;
     }
 
     .ContactInfo a {
         justify-content: initial;
     }
-}
 
-@media (min-width: 850px) {
-    .PositionForm {
-        margin: initial;
-        margin-left: 1rem;
-        text-align: left;
+    .DividerLarge {
+        display: initial;
+    }
+    
+    .DividerSmall {
+        display: none;
     }
 }
 

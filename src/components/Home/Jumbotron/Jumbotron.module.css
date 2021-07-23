@@ -1,6 +1,9 @@
 .Jumbotron {
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
-    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/homepageJumboStatic.png?alt=media&token=1dc5b8f0-813b-4926-84d9-9adb482e4c2c") 50%/cover no-repeat border-box;
+    /* background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/homepageJumboStatic.png?alt=media&token=1dc5b8f0-813b-4926-84d9-9adb482e4c2c") 50%/cover no-repeat border-box; */
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
+    url("https://cdn.pixabay.com/photo/2019/11/08/09/27/panorama-4610864_960_720.jpg") 40%/cover no-repeat border-box;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
     color: white;
     margin: auto;
     overflow: hidden;
@@ -10,11 +13,12 @@
 }
 
 .Jumbotron h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 1.5rem 0 0.5rem;
 }
 
 .Jumbotron p {
+    font-size: var(--secondary-text);
     margin: 0 0 0.5rem;
     opacity: 0.7;
 }
@@ -73,11 +77,7 @@
 
 @media (min-width: 720px) {
     .Jumbotron h1 {
-        font-size: 2rem;
-    }
-    
-    .Jumbotron p {
-        font-size: var(--secondary-text);
+        font-size: 2.5rem;
     }
 }
 

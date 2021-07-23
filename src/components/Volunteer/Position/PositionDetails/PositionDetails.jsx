@@ -13,7 +13,7 @@ const PositionDetails = ({bullets, descriptionLong, title}) => {
     const dispatch = useDispatch();
     
     function handleClick() {
-        dispatch(setModalContent(<PositionForm />));
+        dispatch(setModalContent(<PositionForm title={title} />));
     }
 
     return (
@@ -29,7 +29,7 @@ const PositionDetails = ({bullets, descriptionLong, title}) => {
                     ))}
                 </ul>
             </div>
-            {/* <Button onClick={handleClick}>Volunteer</Button> */}
+            <Button onClick={handleClick}>Volunteer</Button>
         </div>
     );
 }
