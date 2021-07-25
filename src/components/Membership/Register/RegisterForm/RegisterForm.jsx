@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux"
-import {Redirect} from "react-router-dom";
 
 import {TextField, Typography} from "@material-ui/core";
 
@@ -11,18 +10,16 @@ import classes from "./RegisterForm.module.css";
 import {register, resetPassword} from "../../../../store/actions/auth";
 //signInWithGoogle can be imported from ... ../auth
 
-const RegisterForm = ({handleNextStep, newUser, tier}) => {
+const RegisterForm = ({handleNextStep, isResettingPassword, newUser, setIsResettingPassword, tier}) => {
     const [emailSent, setEmailSent] = useState(false);
     const [isNewUser, setIsNewUser] = useState(true);
-    const [isResettingPassword, setIsResettingPassword] = useState(false);
-    const [isSignedUp, setIsSignedUp] = useState(false);
     const [userData, setUserData] = useState({
         email: "",
         firstName: "",
         lastName: "",
         password: "",
         phone: "",
-        tier: null
+        tier: tier
     });
     const error = useSelector(state => state.auth.error);
     const loading = useSelector(state => state.auth.loading)
@@ -30,12 +27,6 @@ const RegisterForm = ({handleNextStep, newUser, tier}) => {
 
     useEffect(() => {
         setIsNewUser(newUser);
-        setUserData(prevValue => {
-            return {
-                ...prevValue,
-                tier: tier
-            }
-        });
     }, [newUser, setIsNewUser]);
 
     function handleSubmit(event) {
@@ -69,8 +60,7 @@ const RegisterForm = ({handleNextStep, newUser, tier}) => {
     }
 
     return (
-        <div className={classes.Register}>
-            {isSignedUp && <Redirect to="/" />} {/* redirects back to home page after user has logged in */}
+        <div className={classes.RegisterForm}>
             {loading ? <Spinner />
                 : <>
                     <Typography align="center" variant="h6">

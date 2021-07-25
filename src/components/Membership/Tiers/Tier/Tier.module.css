@@ -1,5 +1,5 @@
 .Tier {
-    background: #e7e7e7;
+    background: white;
     border-radius: 48px 0 48px 0;
     display: flex;
     flex-direction: column;
@@ -9,11 +9,6 @@
     padding: 2.5rem 3rem;
     width: 20rem;
 }
-
-.Tier p {
-    font-size: 1.25rem;
-}
-
 .Tier ul {
     list-style: none;
     padding: 0;
@@ -34,8 +29,8 @@
     font-weight: bold;
 }
 
-.Top p {
-    width: 60%;
+.Top h2 {
+    font-size: 1.75rem;
 }
 
 .FamilyButton {

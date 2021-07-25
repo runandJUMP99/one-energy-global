@@ -8,6 +8,7 @@ import Investment from "./Investment/Investment";
 import Jumbotron from "./Jumbotron/Jumbotron";
 import Mission from "./Mission/Mission";
 import Newsletter from "../Global/Newsletter/Newsletter";
+import OneEnergyPlus from "./OneEnergyPlus/OneEnergyPlus";
 import SocialResp from "./SocialResp/SocialResp";
 import Volunteer from "./Volunteer/Volunteer";
 
@@ -17,8 +18,9 @@ const Home = () => {
     return (
         <div className={classes.Home}>
             <Jumbotron />
-            <Highlights />
             <Mission />
+            <OneEnergyPlus />
+            <Highlights />
             <CultureCode />
             <SocialResp />
             <Volunteer />

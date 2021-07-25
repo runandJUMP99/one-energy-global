@@ -1,5 +1,5 @@
 .Directors {
-    background: #16697a;
+    background: var(--secondary-color);
     color: white;
     padding: 4rem 0;
 }

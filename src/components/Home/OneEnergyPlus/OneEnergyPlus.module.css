@@ -1,0 +1,29 @@
+.OneEnergyPlus {
+    align-items: center;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
+    url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/homepageJumboStatic.png?alt=media&token=1dc5b8f0-813b-4926-84d9-9adb482e4c2c") 40%/cover no-repeat border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.OneEnergyPlus img {
+    margin-bottom: 2rem;
+    max-width: 350px;
+    width: 80%;
+}
+
+.OneEnergyPlus p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 800px;
+    width: 90%;
+}
+
+@media (min-width: 650px) {
+    .OneEnergyPlus p {
+        font-size: 1.7rem;
+    }
+}

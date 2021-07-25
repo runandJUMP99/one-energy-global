@@ -3,12 +3,11 @@ import {NavLink} from "react-router-dom";
 
 import classes from "./RedirectNotification.module.css";
 
-const RedirectNotification = ({isResettingPassword, setIsRedirecting, setIsResettingPassword, setIsSignedUp}) => {
+const RedirectNotification = ({isResettingPassword, setIsResettingPassword, setIsSignedUp}) => {
     setTimeout(() => {
-        // setIsRedirecting(false);
-        // setIsResettingPassword(false);
-        // setIsSignedUp(true);
-    }, 3000);
+        setIsResettingPassword(false);
+        setIsSignedUp(true);
+    }, 4000);
 
     return (
         <div className={classes.RedirectNotification}>

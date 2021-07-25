@@ -1,0 +1,22 @@
+.RegisterInfo h2 {
+    color: var(--highlight);
+}
+
+.DividerLarge {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .RegisterInfo {
+        text-align: left;
+        width: 45%
+    }
+
+    .DividerLarge {
+        display: initial;
+    }
+
+    .DividerSmall {
+        display: none;
+    }
+}

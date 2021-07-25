@@ -6,6 +6,12 @@ const leadershipData  = {
             name: "Nasaiah Izon Hoskins",
             title: "Chairman and Chief Executive Officer, One Energy Global Inc."
         },{
+            bio1: "As Chief of Staff, Zuri is the second-highest C-suite executive and senior advisor. She oversees all areas of the company and is the Head of the Chairman & CEO’s communication.",
+            bio2: "Zuri is a resident of Paterson, NJ. She attended East Stroudsburg University and studied Communications with a concentration in Media studies and Broadcasting as she had a minor in Digital Media Technology. While attaining her bachelor’s degree at ESU, Zuri became the President of the Black Student Union and a proud member of WESS Radio Station. At WESS Radio, Zuri became the first woman to commentate a PSAC Football Game. As the President of the Black Student Union, she fought for equality throughout the summer of 2020 into the spring of 2021 where she was able to successfully pass the race relations policy within the ESU student handbook. In addition, Redmond has served as the Press and Publicity chair of the Pennsylvania NAACP Youth and College Division, as well as a Facilitator with the Frederick Douglass Institute Of Pennsylvania.",
+            img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/RedmondZuri.jpeg?alt=media&token=79e95ba4-a958-41cd-804a-8389d69795a3",
+            name: "Zuri Redmond",
+            title: "Chief of Staff & Head of the CEO's Communication, One Energy Global Inc."
+        },{
             bio1: "Diane Henry is a seasoned professional who brings over 25+ years of Human Resources experience. She serves as the manager of the Human Resource/Employee Relations department and is responsible for providing the Human Resources department support to multiple locations. Diane has held a variety of Senior Management Human Resource roles within various disciplines.",
             bio2: "Prior, Diane was the Regional Field Human Resource Manager for Ryder Logistics. She provided support for 35 union and non-union accounts across the Northern and Southern regions of the US. Diane is currently pursuing her SPHR-CP. In her free time, she enjoys painting, traveling and spending quality time with her family.",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/HenryDiane.jpg?alt=media&token=d1d81991-cd67-4602-a9e3-3d875fbc828f",
@@ -32,12 +38,6 @@ const leadershipData  = {
         }
     ],
     management: [{
-            bio1: "As Chief of Staff, Zuri is the second-highest C-suite executive and senior advisor. She oversees all areas of the company and is the Head of the Chairman & CEO’s communication.",
-            bio2: "Zuri is a resident of Paterson, NJ. She attended East Stroudsburg University and studied Communications with a concentration in Media studies and Broadcasting as she had a minor in Digital Media Technology. While attaining her bachelor’s degree at ESU, Zuri became the President of the Black Student Union and a proud member of WESS Radio Station. At WESS Radio, Zuri became the first woman to commentate a PSAC Football Game. As the President of the Black Student Union, she fought for equality throughout the summer of 2020 into the spring of 2021 where she was able to successfully pass the race relations policy within the ESU student handbook. In addition, Redmond has served as the Press and Publicity chair of the Pennsylvania NAACP Youth and College Division, as well as a Facilitator with the Frederick Douglass Institute Of Pennsylvania.",
-            img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/RedmondZuri.jpeg?alt=media&token=79e95ba4-a958-41cd-804a-8389d69795a3",
-            name: "Zuri Redmond",
-            title: "Chief of Staff & Head of the CEO's Communication, One Energy Global Inc."
-        },{
             bio1: "Alexandra is an ambitious and creative individual tasked with being a Creative Team Lead of One Energy Imagination. She uses previous leadership experience to establish and organize an amazing group of individuals. Born in Barrington, Illinois, and raised in a suburb of Chicago, Alexandra’s experiences have given her a heart for the world. During her time in college at the University of Missouri, she was given opportunities to travel to places like Tanzania and Ireland, experiencing many different cultures. With her position as a Team Lead for One Energy Imagination, Alexandra aspires to make a positive impact on the world with the help of her team.",
             bio2: "",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/NeuhalfenAlexandra.jpg?alt=media&token=ffe02b9a-3846-438b-8e8f-f922bfbd2393",
@@ -62,7 +62,7 @@ const leadershipData  = {
             bio2: "",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/DuahCaleb.jpg?alt=media&token=99738ee3-0798-4d76-b0bd-c1cc4ab50be2",
             name: "Caleb Duah",
-            title: "Chief Experience Officer, One Energy Global Inc."
+            title: "Director"
         },{
             bio1: "Grace Amponsah is a student at The George Washington University pursuing a degree in Accounting and minor in Sociology. Throughout her studies she has participated in several student organizations including the National Association of Black Accountants (NABA), Beta Alpha Psi, Zeta Phi Beta Sorority Inc., and GWU NPHC. Grace plans to pursue an MA in Accounting to gain the 150 credits needed for eligibility to take the CPA in 2022. In the future, she plans to obtain a degree in Business Law to become a corporate lawyer.",
             bio2: "",
@@ -80,7 +80,7 @@ const leadershipData  = {
             bio2: "",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/CaccavelliMarc.jpg?alt=media&token=683870cb-3e0d-442e-bc59-90a4f904309e",
             name: "Marc Caccavelli",
-            title: "Treasurer"
+            title: "Director"
         },{
             bio1: "An MBA graduate of Florida Southern College, Marc Lozano has a decade of experience in Finance and Business Operations. The majority of Marc’s professional career has been spent working for NBA Entertainment as well as the healthcare and education sectors. Lozano also co-owns a General Fitness and Sports Performance company called 3-IN-1 Training that operates out of northeast Pennsylvania. In addition Marc has helped develop and grow a youth sports ministry in New York and New Jersey that is the first of its kind under the global organization Athletes in Action.",
             bio2: "",

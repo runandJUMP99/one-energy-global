@@ -8,7 +8,7 @@ import classes from "./Tier.module.css";
 
 const Tier = ({handleNextStep, highlights, name, price, tier}) => {
     return (
-        <div className={classes.Tier} style={{background: name === "Family Bundle" && "var(--cta)", color: name === "Family Bundle" && "white"}}>
+        <div className={classes.Tier} style={{background: name === "Family Bundle" && "var(--highlight)", color: name === "Family Bundle" && "white"}}>
             <div className={classes.Top}>
                 <h2>{name}</h2>
                 <p>{price}</p>

@@ -1,12 +1,16 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 import RegisterForm from "./RegisterForm/RegisterForm";
+import RegisterInfo from "./RegisterInfo/RegisterInfo";
 
 import classes from "./Register.module.css";
 
 const Register = ({handleNextStep, newUser, tier}) => {
     return (
-       <RegisterForm handleNextStep={handleNextStep} newUser={newUser} tier={tier} />
+        <div className={classes.Register}>
+            <RegisterInfo tier={tier} />
+            <RegisterForm handleNextStep={handleNextStep} newUser={newUser} tier={tier} />
+        </div>
     );
 }
 

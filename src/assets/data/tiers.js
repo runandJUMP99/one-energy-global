@@ -4,7 +4,7 @@ const tiers  = [
         highlights: [
             "Exclusive access to full podcast episodes",
             "Access to monthly Career Workshops",
-            "Ogranization Updates"
+            "Organization Updates"
         ],
         name: "Free Membership",
         price: "FREE!",
@@ -18,7 +18,7 @@ const tiers  = [
             "Counseling Options",
             "Access to our Masterclass"
         ],
-        name: "Student",
+        name: "Student Discount Membership",
         price: "$20 monthly / $215 annual",
         tier: 2
     },

@@ -1,10 +1,6 @@
 .Membership {
-    align-items: center;
     background: var(--cta);
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    justify-content: center;
     min-height: 100vh;
     object-fit: cover;
     padding: 6rem 0 4rem;
@@ -13,7 +9,7 @@
 
 .Text {
     color: white;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     max-width: 450px;
     text-align: center;
     width: 90%;
@@ -23,14 +19,8 @@
     margin-top: 0;
 }
 
-.Text ul {
-    padding-left: 1rem;
-}
-
-.Text p,
-.Text li {
-    font-size: 1.1rem;
-    line-height: 1.5;
+.Text img {
+    width: 60%;
 }
 
 @media (min-width: 720px) {
@@ -44,10 +34,5 @@
     .Membership {
         flex-direction: row;
         padding: 8rem 1rem 4rem;
-    }
-
-    .Text {
-        margin-right: 1rem;
-        text-align: left;
     }
 }
