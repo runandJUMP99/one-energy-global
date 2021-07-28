@@ -48,17 +48,15 @@
     margin: 1rem auto 0.5rem !important;
 }
 
-.Switch {
+.Switch a {
+    color: initial;
+    cursor: pointer;
     font-size: 0.8rem;
     text-align: center;
-}
-
-.SwitchClick {
-    cursor: pointer;
     text-decoration: underline;
 }
 
-.SwitchClick:hover {
+.Switch a:hover {
     color: #666666;
     text-decoration: none;
 }

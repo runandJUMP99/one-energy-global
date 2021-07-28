@@ -4,7 +4,7 @@ import {editUser} from "../actions/users";
 import firebase from "firebase/app";
 import "firebase/auth";
 
-export const register = (isNewUser, user) => async(dispatch) => {
+export const register = (isNewUser, setIsSignedUp, user) => async(dispatch) => {
     try {
         dispatch({type: actionTypes.AUTH_START});
 
@@ -37,6 +37,8 @@ export const register = (isNewUser, user) => async(dispatch) => {
                     return firebase.auth().signInWithEmailAndPassword(user.email, user.password);
                 });
             currentUser = firebase.auth().currentUser;
+
+            setIsSignedUp(true);
         }
         
         const token = await firebase.auth().currentUser.getIdToken(true);

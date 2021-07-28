@@ -5,11 +5,11 @@ import RegisterInfo from "./RegisterInfo/RegisterInfo";
 
 import classes from "./Register.module.css";
 
-const Register = ({handleNextStep, newUser, tier}) => {
+const Register = ({handleNextStep, tier}) => {
     return (
         <div className={classes.Register}>
             <RegisterInfo tier={tier} />
-            <RegisterForm handleNextStep={handleNextStep} newUser={newUser} tier={tier} />
+            <RegisterForm handleNextStep={handleNextStep} isNewUser={true} tier={tier} />
         </div>
     );
 }

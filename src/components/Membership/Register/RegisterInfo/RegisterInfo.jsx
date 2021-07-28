@@ -5,9 +5,11 @@ import Divider from "../../../UI/Divider/Divider";
 import classes from "./RegisterInfo.module.css";
 
 const RegisterInfo = ({tier}) => {
-    let title = "Free Membership";
+    let title = "Welcome Back!";
 
-    if (tier === 2) {
+    if (tier === 1) {
+        title = "Free Membership";
+    } else if (tier === 2) {
         title = "Student Membership";
     } else if (tier === 3) {
         title = "Standard Membership";

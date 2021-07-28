@@ -1,0 +1,36 @@
+.Login {
+    background: var(--cta);
+    height: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.Form {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 900px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    width: 90%;
+}
+
+@media (min-width: 720px) {
+    .Login {
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 100%, transparent), 
+        url("https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/SocialResp.jpg?alt=media&token=e2113c21-99e7-4a7a-b5ce-2cf460823f31") 70%/cover no-repeat border-box;
+        padding: 8rem 1rem 4rem;
+    }
+    
+    .Form {
+        flex-direction: row;
+    }
+}

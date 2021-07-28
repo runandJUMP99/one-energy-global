@@ -8,6 +8,7 @@ import Backdrop from "./components/UI/Backdrop/Backdrop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
 import Membership from "./components/Membership/Membership";
 import Modal from "./components/UI/Modal/Modal";
 import Navbar from "./components/Navbar/Navbar";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/login" component={Login} />
         <Route path="/membership" component={Membership} />
         <Route path="/volunteer" component={Volunteer} />
       </Switch>

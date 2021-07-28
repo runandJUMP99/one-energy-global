@@ -2,6 +2,8 @@ import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {NavLink, useLocation} from "react-router-dom";
 
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 import classes from "./LoginLogout.module.css";
 import {logout} from "../../../store/actions/auth";
 
@@ -20,7 +22,7 @@ const RegisterButtons = () => {
                 ? <NavLink to="/">Home</NavLink>
                 : token
                 ? <span onClick={handleClick}>Logout</span>
-                : <NavLink to="/membership" >Login</NavLink>
+                : <NavLink to="/login" >Login</NavLink>
             }
         </div>
     );
