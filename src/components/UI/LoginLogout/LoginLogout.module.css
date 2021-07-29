@@ -1,27 +1,67 @@
-.LoginLogout a,
-.LoginLogout span {
-    color: white;
-    cursor: pointer;
+.LoginLogout {
     position: absolute;
     right: 1rem;
-    text-decoration: underline;
     top: 28px;
 }
 
-.LoginLogout a:hover,
-.LoginLogout span:hover {
+.LoggedOut {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.LoggedOut:hover {
+    color: white;
     text-decoration: none;
 }
 
+.LoggedIn {
+    align-self: center;
+    bottom: 8px;
+    display: flex;
+    position: relative;
+}
+
+.LoggedIn a,
+.LoggedIn p {
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+}
+
+.LoggedIn a {
+    align-items: center;
+    background: var(--highlight);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3) inset;
+    color: white;
+    display: flex;
+    left: 8rem;
+    margin-right: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.LoggedIn p {
+    background: #eee;
+    margin: 0;
+    padding-left: 2.5rem;
+}
+
 @media (min-width: 850px) {
-    .LoginLogout a,
-    .LoginLogout span {
-        opacity: 0.7;
+    .LoginLogout {
         top: 44px;
     }
+
+    .LoggedOut {
+        opacity: 0.7;
+    }
     
-    .LoginLogout a:hover,
-    .LoginLogout span:hover {
+    .LoggedOut:hover {
         opacity: 1;
+    }
+
+    .LoggedIn {
+        bottom: 4px;
     }
 }

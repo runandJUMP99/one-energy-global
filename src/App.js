@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import firebaseConfig from "./services/firebase";
 
 import About from "./components/About/About";
+import Account from "./components/Account/Account";
 import Backdrop from "./components/UI/Backdrop/Backdrop";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -40,6 +41,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/account" component={Account} />
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
         <Route path="/membership" component={Membership} />

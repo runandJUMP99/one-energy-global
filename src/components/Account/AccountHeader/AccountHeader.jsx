@@ -7,11 +7,11 @@ import CloseIcon from '@material-ui/icons/Close';
 import classes from "./AccountHeader.module.css";
 
 const AccountHeader = () => {
-    const accountName = useSelector(state => state.auth.name);
+    const firstName = useSelector(state => state.auth.firstName);
 
     return (
         <div className={classes.AccountHeader}>
-            <h1>{accountName}</h1>
+            <h1>Hello, {firstName}</h1>
             <NavLink className={classes.CloseIcon} to="/">
                 <CloseIcon fontSize="large" />
             </NavLink>

@@ -40,7 +40,7 @@ const RegisterForm = ({handleNextStep, isResettingPassword, isNewUser, setIsRese
                 setIsResettingPassword(false);
             } else {
                 setEmailSent(false);
-                // dispatch(register(isNewUser, setIsSignedUp, userData));
+                dispatch(register(isNewUser, setIsSignedUp, userData));
     
                 if (isNewUser) {
                     handleNextStep();

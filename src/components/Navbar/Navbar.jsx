@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {useLocation} from "react-router-dom";
 
 import Links from "./Links/Links";
 import LoginLogout from "../UI/LoginLogout/LoginLogout";
@@ -7,6 +8,8 @@ import ToggleButton from "../UI/ToggleButton/ToggleButton";
 import classes from "./Navbar.module.css";
 
 const Navbar = ({fixed, handleShow}) => {
+    const pathname = useLocation().pathname;
+
     const [styles, setStyles] = useState(null);
 
     useEffect(() => {
@@ -34,6 +37,10 @@ const Navbar = ({fixed, handleShow}) => {
             });
         }
     }, [fixed]);
+
+    if (pathname === "/account") {
+        return null;
+    }
 
     return (
         <div className={classes.Navbar} style={styles}>

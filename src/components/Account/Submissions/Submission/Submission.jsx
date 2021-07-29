@@ -6,24 +6,24 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import Button from "../../../UI/Button/Button";
 
 import classes from "./Submission.module.css";
-import {deleteSelection} from "../../../../store/actions/selections";
-import {deleteSubmittedSelection} from "../../../../store/actions/submittedSelections";
+// import {deleteSelection} from "../../../../store/actions/selections";
+// import {deleteSubmittedSelection} from "../../../../store/actions/submittedSelections";
 
 const Submission = ({draftId, id, isSelected, name}) => {
-    const token = useSelector(state => state.auth.token);
-    const dispatch = useDispatch();
+    // const token = useSelector(state => state.auth.token);
+    // const dispatch = useDispatch();
 
-    function handleDelete() {
-        dispatch(deleteSubmittedSelection(id, token));
+    // function handleDelete() {
+    //     dispatch(deleteSubmittedSelection(id, token));
 
-        if (isSelected) {
-            dispatch(deleteSelection(draftId, token));
-        }
-    }
+    //     if (isSelected) {
+    //         dispatch(deleteSelection(draftId, token));
+    //     }
+    // }
     
     return (
         <div className={classes.Submission}>
-            {name}
+            {/* {name}
             {id && <Button onClick={handleDelete} style={{
                 background: "#b9b8b8",
                 bottom: 0,
@@ -32,7 +32,7 @@ const Submission = ({draftId, id, isSelected, name}) => {
                 right: "0.25rem"
             }}>
                 <DeleteIcon fontSize="small" />
-            </Button>}
+            </Button>} */}
         </div>
     );
 }
