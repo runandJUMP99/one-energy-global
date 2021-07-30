@@ -9,8 +9,7 @@ import {logout} from "../../../store/actions/auth";
 
 const RegisterButtons = () => {
     const [isMouseOver, setIsMouseOver] = useState(false);
-    const token = "aoifjaoefua89eu3w98jasdoifjas";
-    // const token = useSelector(state => state.auth.token);
+    const token = useSelector(state => state.auth.token);
     const path = useLocation().pathname;
     const dispatch = useDispatch();
 

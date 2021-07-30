@@ -20,6 +20,24 @@
     width: 100%;
 }
 
+.Logout {
+    background: none;
+    border: none;
+    bottom: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    text-decoration: underline;
+    transform: translateX(-50%);
+}
+
+.Logout:hover {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    text-decoration: none;
+}
+
 @media(min-width: 475px) {
     .Account {
         padding: 10% 1rem;
@@ -34,4 +52,10 @@
     .Display {
         padding: 0 0 1rem 3rem;
     } 
+}
+
+@media(min-width: 850px) {
+    .Logout {
+        display: none;
+    }
 }

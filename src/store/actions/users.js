@@ -38,12 +38,12 @@ export const editUser = (id, user) => async(dispatch) => {
 //     }
 // };
 
-// export const deleteUser = (id, token) => (dispatch) => {
-//     try {
-//         api.deleteUser(id, token);
+export const deleteUser = (id, token) => (dispatch) => {
+    try {
+        api.deleteUser(id, token);
 
-//         dispatch({type: actionTypes.DELETE_USER, payload: id});
-//     } catch(err) {
-//         console.log(err);
-//     }
-// };
+        dispatch({type: actionTypes.DELETE_USER, payload: id});
+    } catch(err) {
+        console.log(err);
+    }
+};

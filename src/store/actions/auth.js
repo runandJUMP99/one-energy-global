@@ -1,6 +1,6 @@
 import * as actionTypes from "../actions/actionTypes";
 import * as api from "./api";
-import {editUser} from "../actions/users";
+import {deleteUser, editUser} from "../actions/users";
 import firebase from "firebase/app";
 import "firebase/auth";
 
@@ -61,65 +61,38 @@ export const register = (isNewUser, setIsSignedUp, user) => async(dispatch) => {
     }
 }
 
-// export const updateProfile = (updatedUser) => async(dispatch) => {
-//     try {
-//         dispatch({type: actionTypes.AUTH_START});
+export const updateProfile = (updatedUser) => async(dispatch) => {
+    try {
+        dispatch({type: actionTypes.AUTH_START});
 
-//         const currentUser = firebase.auth().currentUser;
+        const currentUser = firebase.auth().currentUser;
 
-//         if (updatedUser.email && updatedUser.email !== currentUser.email) {
-//             await currentUser.updateEmail(updatedUser.email);
-//         }
+        if (updatedUser.email && updatedUser.email !== currentUser.email) {
+            await currentUser.updateEmail(updatedUser.email);
+        }
 
-//         if (updatedUser.password) {
-//             await currentUser.updatePassword(updatedUser.password);
-//         }
+        if (updatedUser.password) {
+            await currentUser.updatePassword(updatedUser.password);
+        }
 
-//         if (updatedUser.img) {
-//             const uploadTask = storage.ref(`/profileImgs/${updatedUser.userId}`).put(updatedUser.img);
+        currentUser.updateProfile({
+            displayName: updatedUser.name
+        });
 
-//             uploadTask.on("state_changed", snapshot => {
-//             }, err => {
-//                 console.log(err);
-//             }, () => {
-//                 storage.ref("profileImgs").child(updatedUser.userId).getDownloadURL()
-//                     .then(firebaseUrl => {
-//                         currentUser.updateProfile({
-//                             displayName: updatedUser.name,
-//                             photoURL: firebaseUrl
-//                         });
-
-//                         updatedUser = { //used to remove unnecessary data from being passed
-//                             email: updatedUser.email,
-//                             img: firebaseUrl,
-//                             name: updatedUser.name,
-//                             userId: updatedUser.userId
-//                         };
-                    
-//                         dispatch(editUser(currentUser.uid, updatedUser));
-//                         dispatch({type: actionTypes.AUTH_UPDATE_PROFILE, payload: updatedUser})
-//                     });
-//             });
-//         } else {
-//             currentUser.updateProfile({
-//                 displayName: updatedUser.name
-//             });
-
-//             updatedUser = { //used to remove unnecessary data from being passed
-//                 email: updatedUser.email,
-//                 img: currentUser.photoURL ? currentUser.photoURL : "",
-//                 name: updatedUser.name,
-//                 userId: updatedUser.userId
-//             };
-            
-//             dispatch(editUser(currentUser.uid, updatedUser));
-//             dispatch({type: actionTypes.AUTH_UPDATE_PROFILE, payload: updatedUser})
-//         }
-//     } catch(err) {
-//         console.log(err);
-//         dispatch({type: actionTypes.AUTH_FAIL, payload: err.message});
-//     }
-// }
+        updatedUser = { //used to remove unnecessary data from being passed
+            email: updatedUser.email,
+            img: currentUser.photoURL ? currentUser.photoURL : "",
+            name: updatedUser.name,
+            userId: updatedUser.userId
+        };
+        
+        dispatch(editUser(currentUser.uid, updatedUser));
+        dispatch({type: actionTypes.AUTH_UPDATE_PROFILE, payload: updatedUser})
+    } catch(err) {
+        console.log(err);
+        dispatch({type: actionTypes.AUTH_FAIL, payload: err.message});
+    }
+}
 
 export const resetPassword = (email) => async(dispatch) => {
     try {
@@ -134,24 +107,20 @@ export const resetPassword = (email) => async(dispatch) => {
     }
 }
 
-// export const deleteProfile = (userId, token) => async(dispatch) => {
-//     try {
-//         dispatch({type: actionTypes.AUTH_START});
+export const deleteProfile = (userId, token) => async(dispatch) => {
+    try {
+        dispatch({type: actionTypes.AUTH_START});
 
-//         const currentUser = firebase.auth().currentUser;
-//         await currentUser.delete();
-
-//         if (currentUser.photoURL) {
-//             await storage.ref(`/profileImgs/${userId}`).delete();
-//         }
+        const currentUser = firebase.auth().currentUser;
+        await currentUser.delete();
         
-//         await dispatch(deleteUser(userId, token));
-//         dispatch({type: actionTypes.AUTH_LOGOUT})
-//     } catch(err) {
-//         console.log(err);
-//         dispatch({type: actionTypes.AUTH_FAIL, payload: err.message});
-//     }
-// }
+        await dispatch(deleteUser(userId, token));
+        dispatch({type: actionTypes.AUTH_LOGOUT})
+    } catch(err) {
+        console.log(err);
+        dispatch({type: actionTypes.AUTH_FAIL, payload: err.message});
+    }
+}
 
 export const checkAuthTimeout = (expirationTime, refreshToken) => (dispatch) => {
     setTimeout(async() => {
@@ -226,3 +195,39 @@ export const authCheckState = () => (dispatch) => {
 //         console.log(err);
 //     }
 // }  
+
+
+//UPDATE PROFILE FOR IMGS IF WANT TO ADD IMG AT LATER DATE
+
+// if (updatedUser.img) {
+        //     // const uploadTask = storage.ref(`/profileImgs/${updatedUser.userId}`).put(updatedUser.img);
+
+        //     uploadTask.on("state_changed", snapshot => {
+        //     }, err => {
+        //         console.log(err);
+        //     }, () => {
+        //         storage.ref("profileImgs").child(updatedUser.userId).getDownloadURL()
+        //             .then(firebaseUrl => {
+        //                 currentUser.updateProfile({
+        //                     displayName: updatedUser.name,
+        //                     photoURL: firebaseUrl
+        //                 });
+
+        //                 updatedUser = { //used to remove unnecessary data from being passed
+        //                     email: updatedUser.email,
+        //                     img: firebaseUrl,
+        //                     name: updatedUser.name,
+        //                     userId: updatedUser.userId
+        //                 };
+                    
+        //                 dispatch(editUser(currentUser.uid, updatedUser));
+        //                 dispatch({type: actionTypes.AUTH_UPDATE_PROFILE, payload: updatedUser})
+        //             });
+        //     });
+
+
+//DELETE PROFILE FOR IMGS IF WANT TO ADD IMG AT LATER DATE
+
+// if (currentUser.photoURL) {
+//     await storage.ref(`/profileImgs/${userId}`).delete();
+// }

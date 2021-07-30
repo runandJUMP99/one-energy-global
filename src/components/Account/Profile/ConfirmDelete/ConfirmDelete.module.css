@@ -13,6 +13,7 @@
     padding: 0.5rem 1rem;
     position: relative;
     transition: box-shadow 0.1s linear;
+    width: 5rem;
 }
 
 .ConfirmDelete button:hover {
