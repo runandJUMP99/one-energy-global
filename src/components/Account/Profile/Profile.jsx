@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import ConfirmDelete from "./ConfirmDelete/ConfirmDelete";
@@ -7,6 +7,7 @@ import Spinner from "../../UI/Spinner/Spinner";
 import classes from "./Profile.module.css";
 import logo from "../../../assets/images/logo.png";
 import {updateProfile} from "../../../store/actions/auth";
+import {getUsers} from "../../../store/actions/users";
 
 const Profile = () => {
     const [deleting, setDeleting] = useState(false);
@@ -19,10 +20,17 @@ const Profile = () => {
     });
     const [updating, setUpdating] = useState(false);
     const currentUser = useSelector(state => state.auth);
+    const users = useSelector(state => state.users);
     const error = currentUser.error;
     const loading = currentUser.loading;
     const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(getUsers());
+    }, [dispatch]);
+
+console.log(currentUser);
+console.log(users);
     function handleUpdating() {
         setUpdatedUser({
             email: currentUser.email,

@@ -3,9 +3,9 @@ import * as actionTypes from "../actions/actionTypes";
 const initialState = {
     error: null,
     email: null,
-    loading: false,
     firstName: null,
     lastName: null,
+    loading: false,
     phone: null,
     token: null,
     userId: null

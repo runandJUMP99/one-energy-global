@@ -45,8 +45,8 @@ export const register = (isNewUser, setIsSignedUp, user) => async(dispatch) => {
         const userData = {
             email: currentUser.email,
             firstName: currentUser.displayName,
-            lastName: user.lastName,
-            phone: user.phone,
+            lastName: "",
+            phone: "",
             token: token,
             uid: response.user.uid
         }

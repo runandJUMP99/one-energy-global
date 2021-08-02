@@ -15,7 +15,7 @@ const RegisterButtons = () => {
 
     return (
         <div className={classes.LoginLogout}>
-            {!token ? <NavLink className={classes.LoggedOut} to="/login" >Login</NavLink>
+            {path === "/login" ? null : !token ? <NavLink className={classes.LoggedOut} to="/login" >Login</NavLink> //if user is on login page, do not show component
                 : <div className={classes.LoggedIn} onMouseEnter={() => setIsMouseOver(true)} onMouseLeave={() => setIsMouseOver(false)}>
                     <NavLink to="/account" style={{left: isMouseOver && "3rem"}}><AccountCircleIcon /> Account</NavLink>
                     <p onClick={() => dispatch(logout())}>Logout</p>
