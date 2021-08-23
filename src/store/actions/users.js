@@ -3,6 +3,8 @@ import * as api from "./api";
 
 export const getUsers = () => async(dispatch) => {
     try {
+        dispatch({type: actionTypes.USERS_START});
+
         const fetchedUsers = [];
         const {data} = await api.getUsers();
 

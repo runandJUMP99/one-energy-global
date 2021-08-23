@@ -4,31 +4,19 @@ const leadershipData  = {
             bio2: "Born in Brooklyn, New York, and raised in East Stroudsburg, Pennsylvania, Nasaiah’s experience leading large boards and organizations makes him prepared for the job. He is a gifted communicator, entrepreneur, multigenerational thought leader,  and social engineer. Nasaiah is a student at East Stroudsburg University studying, Public Communication & Advocacy. From 2019-2020 he served as Vice Chairman of the NAACP’s, National Youth Work Committee where he led the 30,000-member division. Nasaiah believes we have more in common than what separates us. His goal is to be a global leader, where he believes the collaborative efforts of nations can end global crises.",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/HoskinsNasaiah.jpg?alt=media&token=5e73a4dc-4b4f-4629-9a34-513d5b06be8f",
             name: "Nasaiah Izon Hoskins",
-            title: "Chairman and Chief Executive Officer, One Energy Global Inc."
+            title: "Chairman and Chief Executive Officer, The One Energy Company"
         },{
             bio1: "As Chief of Staff, Zuri is the second-highest C-suite executive and senior advisor. She oversees all areas of the company and is the Head of the Chairman & CEO’s communication.",
             bio2: "Zuri is a resident of Paterson, NJ. She attended East Stroudsburg University and studied Communications with a concentration in Media studies and Broadcasting as she had a minor in Digital Media Technology. While attaining her bachelor’s degree at ESU, Zuri became the President of the Black Student Union and a proud member of WESS Radio Station. At WESS Radio, Zuri became the first woman to commentate a PSAC Football Game. As the President of the Black Student Union, she fought for equality throughout the summer of 2020 into the spring of 2021 where she was able to successfully pass the race relations policy within the ESU student handbook. In addition, Redmond has served as the Press and Publicity chair of the Pennsylvania NAACP Youth and College Division, as well as a Facilitator with the Frederick Douglass Institute Of Pennsylvania.",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/RedmondZuri.jpeg?alt=media&token=79e95ba4-a958-41cd-804a-8389d69795a3",
             name: "Zuri Redmond",
-            title: "Chief of Staff & Head of the CEO's Communication, One Energy Global Inc."
-        },{
-            bio1: "Diane Henry is a seasoned professional who brings over 25+ years of Human Resources experience. She serves as the manager of the Human Resource/Employee Relations department and is responsible for providing the Human Resources department support to multiple locations. Diane has held a variety of Senior Management Human Resource roles within various disciplines.",
-            bio2: "Prior, Diane was the Regional Field Human Resource Manager for Ryder Logistics. She provided support for 35 union and non-union accounts across the Northern and Southern regions of the US. Diane is currently pursuing her SPHR-CP. In her free time, she enjoys painting, traveling and spending quality time with her family.",
-            img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/HenryDiane.jpg?alt=media&token=d1d81991-cd67-4602-a9e3-3d875fbc828f",
-            name: "Diane Henry",
-            title: "Chief Human Resource Officer, One Energy Global Inc."
+            title: "Chief of Staff & Head of the CEO's Communication, The One Energy Company"
         },{
             bio1: "As Chief Experience Officer (CXO), Caleb ensures membership and volunteer satisfaction, while also overseeing outreach. He brings years of entrepreneurship and health background to the company. Specializing in project development and sustainability, Caleb with the help of the board and other executives looks to expand and double the organization’s strategic outlook in all aspects. Caleb brings on a few years of leadership experience and an innovative mindset.",
             bio2: "",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/DuahCaleb.jpg?alt=media&token=99738ee3-0798-4d76-b0bd-c1cc4ab50be2",
             name: "Caleb Duah",
-            title: "Chief Experience Officer, One Energy Global Inc."
-        },{
-            bio1: "",
-            bio2: "",
-            img: "",
-            name: "Mimi Staton",
-            title: "Chief Recruitment & Volunteer Officer, One Energy Global Inc."
+            title: "Chief Experience Officer, The One Energy Company"
         },{
             bio1: "Paul Catalano is the Chairman of One Energy Sports. His responsibilities range from developing sports leagues to working with the commissioners to ensure the leagues are successful and remain impactful. Their goal is to give athletes across the country the opportunity to compete, tell their stories, and develop as professionals.",
             bio2: "Catalano is a 20-year senior entertainment marketing executive who for thirteen years served as FOX Sports’ Vice President of Marketing and Content. There he assisted in the creation and development of promotional elements and assets for all FOX Sports on-air properties. He has extensive experience in working with talent on promotional projects, creative campaign management and development, on-air, online, and social media implementation, market research and growth, building and cultivating partner and designer relationships, and brand marketing effectiveness and awareness. His background includes working on several Super Bowls, World Series, Women’s World Cup, the Daytona 500, and many other of the most-watched events in sports television.",
@@ -56,7 +44,7 @@ const leadershipData  = {
             bio2: "Born in Brooklyn, New York, and raised in East Stroudsburg, Pennsylvania, Nasaiah’s experience leading large boards and organizations makes him prepared for the job. He is a gifted communicator, entrepreneur, multigenerational thought leader,  and social engineer. Nasaiah is a student at East Stroudsburg University studying, Public Communication & Advocacy. From 2019-2020 he served as Vice Chairman of the NAACP’s, National Youth Work Committee where he led the 30,000-member division. Nasaiah believes we have more in common than what separates us. His goal is to be a global leader, where he believes the collaborative efforts of nations can end global crises.",
             img: "https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/HoskinsNasaiah.jpg?alt=media&token=5e73a4dc-4b4f-4629-9a34-513d5b06be8f",
             name: "Nasaiah Izon Hoskins",
-            title: "Chairman and Chief Executive Officer, One Energy Global Inc."
+            title: "Chairman and Chief Executive Officer, The One Energy Company"
         },{
             bio1: "As Chief Experience Officer (CXO), Caleb ensures membership and volunteer satisfaction, while also overseeing outreach. He brings years of entrepreneurship and health background to the company. Specializing in project development and sustainability, Caleb with the help of the board and other executives looks to expand and double the organization’s strategic outlook in all aspects. Caleb brings on a few years of leadership experience and an innovative mindset.",
             bio2: "",

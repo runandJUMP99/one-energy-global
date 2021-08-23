@@ -180,7 +180,7 @@ const volunteerPositions  = {
                 "Attend assigned meetings"
             ],
             descriptionLong: "Members of OEG Cast are volunteers that are actors or hosts of an OEG show.",
-            descriptionShort: "This role would be members of the One Energy Global Cast and are actors or hosts of a One Energy Global show.",
+            descriptionShort: "This role would be members of The One Energy Company Cast and are actors or hosts of a One Energy Company show.",
             title: "Cast",
         },{
             bullets: [

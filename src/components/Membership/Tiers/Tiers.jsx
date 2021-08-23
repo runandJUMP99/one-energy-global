@@ -11,6 +11,7 @@ const Tiers = ({handleNextStep}) => {
             {tiers.map(tier => (
                 <Tier
                     key={tier.name}
+                    description={tier.description}
                     handleNextStep={handleNextStep}
                     highlights={tier.highlights}
                     name={tier.name}

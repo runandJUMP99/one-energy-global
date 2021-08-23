@@ -19,8 +19,8 @@ const Home = () => {
         <div className={classes.Home}>
             <Jumbotron />
             <Mission />
-            <OneEnergyPlus />
-            <Highlights />
+            {/* <OneEnergyPlus /> */}
+            {/* <Highlights /> */}
             <CultureCode />
             <SocialResp />
             <Volunteer />

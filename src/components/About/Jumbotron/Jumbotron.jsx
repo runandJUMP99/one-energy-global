@@ -5,7 +5,7 @@ import classes from "./Jumbotron.module.css";
 const Jumbotron = () => {
     return (
         <div className={classes.Jumbotron}>
-            <h1>About One Energy Global Inc.</h1>
+            <h1>About The One Energy Company</h1>
         </div>
     );
 }

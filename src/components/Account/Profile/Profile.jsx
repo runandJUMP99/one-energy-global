@@ -2,10 +2,11 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import ConfirmDelete from "./ConfirmDelete/ConfirmDelete";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import Spinner from "../../UI/Spinner/Spinner";
 
 import classes from "./Profile.module.css";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logoBackground.png";
 import {updateProfile} from "../../../store/actions/auth";
 import {getUsers} from "../../../store/actions/users";
 
@@ -13,33 +14,28 @@ const Profile = () => {
     const [deleting, setDeleting] = useState(false);
     const [updatedUser, setUpdatedUser] = useState({
         email: "",
+        firstName: "",
         img: "",
         imgValue: "",
-        name: "",
-        password: ""
+        lastName: "",
+        password: "",
+        phone: ""
     });
     const [updating, setUpdating] = useState(false);
     const currentUser = useSelector(state => state.auth);
-    const users = useSelector(state => state.users);
+    const users = useSelector(state => state.users.users);
+    const usersLoading = useSelector(state => state.users.loading);
+    const currentUserData = users.find(user => user.firstName === currentUser.firstName);
     const error = currentUser.error;
     const loading = currentUser.loading;
     const dispatch = useDispatch();
-
+console.log(currentUserData);
     useEffect(() => {
         dispatch(getUsers());
-    }, [dispatch]);
+    }, [currentUserData, dispatch]);
 
-console.log(currentUser);
-console.log(users);
+
     function handleUpdating() {
-        setUpdatedUser({
-            email: currentUser.email,
-            img: "",
-            imgValue: "",
-            name: currentUser.name,
-            password: "",
-            userId: currentUser.userId            
-        });
         setDeleting(false);
         setUpdating(true);
     }
@@ -48,25 +44,81 @@ console.log(users);
         dispatch(updateProfile(updatedUser, currentUser.token));
         setUpdating(false);
     }
+        
+    if (!updatedUser.email) {
+        console.log("if");    
+    }
+
+    if (currentUserData && !updatedUser.email) {
+        console.log("if");
+        setUpdatedUser({
+            email: currentUserData.email,
+            firstName: currentUserData.firstName,
+            img: "",
+            imgValue: "",
+            lastName: currentUserData.lastName,
+            password: "",
+            phone: currentUserData.phone,
+            userId: currentUserData.userId
+        });
+    }
 
     return (
         <div className={classes.Profile}>
-            {(deleting && !error) ? <ConfirmDelete setDeleting={setDeleting} /> : loading ? <Spinner /> : 
+            {(deleting && !error) ? <ConfirmDelete setDeleting={setDeleting} /> : (loading || usersLoading) ? <Spinner /> :
                 <>
                     <img src={currentUser.img ? currentUser.img : logo} alt="Avatar" />
                     <p className={classes.Error}>{error}</p>
-                    <p>
-                        <strong>Username: </strong> 
-                        {updating ? <input onChange={(event) => setUpdatedUser({...updatedUser, name: event.target.value})} placeholder="Username" type="text" value={updatedUser.name} /> : currentUser.name}
-                    </p>
-                    <p>
-                        <strong>Email: </strong> 
-                        {updating ? <input onChange={(event) => setUpdatedUser({...updatedUser, email: event.target.value})} placeholder="Email" type="email" value={updatedUser.email} /> : currentUser.email}
-                    </p>
-                    <p>
-                        <strong>Password: </strong> 
-                        {updating ? <input onChange={(event) => setUpdatedUser({...updatedUser, password: event.target.value})} placeholder="Password" type="password" value={updatedUser.password} /> : "•••••••••"}
-                    </p>
+                    <ProfileInfo
+                        currentValue={currentUser.firstName}
+                        key="firstName"
+                        setUpdatedUser={setUpdatedUser}
+                        title="First Name"
+                        type="text"
+                        updatedUser={updatedUser}
+                        updating={updating}
+                        value={updatedUser.firstName} 
+                    />
+                    <ProfileInfo
+                        currentValue={currentUser.lastName}
+                        key="lastName"
+                        setUpdatedUser={setUpdatedUser}
+                        title="Last Name"
+                        type="text"
+                        updatedUser={updatedUser}
+                        updating={updating}
+                        value={updatedUser.lastName} 
+                    />
+                    <ProfileInfo
+                        currentValue={currentUser.phone}
+                        key="phone"
+                        setUpdatedUser={setUpdatedUser}
+                        title="Phone Number"
+                        type="text"
+                        updatedUser={updatedUser}
+                        updating={updating}
+                        value={updatedUser.phone} 
+                    />
+                    <ProfileInfo
+                        currentValue={currentUser.email}
+                        key="email"
+                        setUpdatedUser={setUpdatedUser}
+                        title="Email"
+                        type="email"
+                        updatedUser={updatedUser}
+                        updating={updating}
+                        value={updatedUser.email} 
+                    />
+                    <ProfileInfo
+                        currentValue="•••••••••"
+                        key="password"
+                        setUpdatedUser={setUpdatedUser}
+                        title="Password"
+                        type="password"
+                        updatedUser={updatedUser}
+                        updating={updating}
+                        value={updatedUser.password} 
+                    />
                     {updating && <p className={classes.PasswordCaption}>(Leave blank to not update password)</p>}
                     <button className={classes.Update} onClick={updating ? handleSubmit : handleUpdating}>
                         {updating ? "Save" : "Update Profile"}

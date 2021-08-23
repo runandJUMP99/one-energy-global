@@ -32,13 +32,13 @@ const Membership = () => {
             {isSignedUp && <Redirect to="/" />} {/* redirects back to home page if user is logged in */}
             {signupStep === 0 && 
                 <>
-                    <div className={classes.Text}>
+                    {/* <div className={classes.Text}>
                         <h1>Meet OneEnergy+</h1>
                         <h6>The Home of Personal Development Content & Services</h6>
                         <img src="https://firebasestorage.googleapis.com/v0/b/one-energy-global.appspot.com/o/OneEnergyPlus.PNG?alt=media&token=bc7de9b5-96c7-42a7-b726-686b86dae94c" alt="One Energy Plus" />
                         <p>Public Applications will open August 27th!</p>
                     </div>
-                    <Timer />
+                    <Timer /> */}
                 </>
             }
             {signupSteps[signupStep]}

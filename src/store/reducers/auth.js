@@ -4,9 +4,7 @@ const initialState = {
     error: null,
     email: null,
     firstName: null,
-    lastName: null,
     loading: false,
-    phone: null,
     token: null,
     userId: null
 }
@@ -19,8 +17,6 @@ const auth = (state = initialState, action) => {
                 email: action.payload.email,
                 loading: false,
                 firstName: action.payload.firstName,
-                lastName: action.payload.lastName,
-                phone: action.payload.phone,
                 token: action.payload.token,
                 userId: action.payload.uid
             };
@@ -42,8 +38,6 @@ const auth = (state = initialState, action) => {
                 email: action.payload.email,
                 loading: false,
                 firstName: action.payload.firstName,
-                lastName: action.payload.lastName,
-                phone: action.payload.phone
             };
         case actionTypes.AUTH_LOGOUT:
             return {
@@ -51,8 +45,6 @@ const auth = (state = initialState, action) => {
                 email: null,
                 loading: false,
                 firstName: null,
-                lastName: null,
-                phone: null,
                 token: null,
                 userId: null
             };

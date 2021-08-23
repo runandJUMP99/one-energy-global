@@ -9,7 +9,7 @@ const CultureCode = () => {
         <div className={classes.CultureCode}>
             <div className={classes.Text}>
                 <h2>Culture Code:</h2>
-                <p><strong>THE NUMBER ONE THING</strong> we value here at One Energy Global is a culture of <strong>family.</strong> Our primary culture goal is to facilitate ways to bring individuals and communities together. Listed below is the list of internal values we have at OEG.</p>
+                <p><strong>THE NUMBER ONE THING</strong> we value here at The One Energy Company is a culture of <strong>family.</strong> Our primary culture goal is to facilitate ways to bring individuals and communities together. Listed below is the list of internal values we have at OEG.</p>
                 <p>OUR CORE VALUES</p>
                 <ul>
                     <li><strong>Family</strong> is our foundation</li>
