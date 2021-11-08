@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import {Redirect} from "react-router-dom";
 
-import Payment from "./Register/RegisterForm/Payment/Payment";
+// import Payment from "./Register/RegisterForm/Payment/Payment";
 import RedirectNotification from "./RedirectNotification/RedirectNotification";
 import Register from "./Register/Register";
 import Tiers from "./Tiers/Tiers";
-import Timer from "../UI/Timer/Timer";
+// import Timer from "../UI/Timer/Timer";
 
 import classes from "./Membership.module.css";
 

@@ -1,47 +1,49 @@
 .Vision {
-    background: var(--background);
-    padding: 2rem 0;
-    text-align: center;
+  background: var(--background);
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
 }
 
 .Vision h2 {
-    color: var(--highlight);
-    font-size: var(--secondary-header);
+  color: var(--highlight);
+  font-size: var(--secondary-header);
 }
 
 .Vision img {
-    border-radius: 16px;
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
-    width: 60%;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+  width: 60%;
 }
 
 .Vision p {
-    color: var(--secondary-color);
-    line-height: 1.5;
-    margin: 1rem auto;
-    width: 90%
+  color: var(--secondary-color);
+  line-height: 1.5;
+  margin: 1rem auto;
+  width: 90%;
 }
 
 .Content {
-    margin: auto;
-    max-width: 1000px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 @media (min-width: 850px) {
-    .Vision {
-        padding: 4rem 0;
-    }
+  .Vision {
+    padding: 4rem 0;
+  }
 
-    .Vision h2 {
-        font-size: var(--jumbo-text);
-    }
+  .Vision h2 {
+    font-size: var(--jumbo-text);
+  }
 
-    .Vision img {
-        width: 40%;
-    }
+  .Vision img {
+    width: 40%;
+  }
 
-    .Vision p {
-        line-height: 2;
-        font-size: var(--secondary-text);
-    }
+  .Vision p {
+    line-height: 2;
+    font-size: var(--secondary-text);
+  }
 }

@@ -10,7 +10,7 @@ const Vision = () => {
             <div className={classes.Content}>
                 <h2>Our Vision</h2>
                 <Divider />
-                <p>Our vision is to be the largest family-based organization, that is impactful through premier media production and global outreach.</p>
+                <p>Our vision is to facilitate peace, opportunity, and possibility in a stagnant world.</p>
             </div>
         </div>
     );

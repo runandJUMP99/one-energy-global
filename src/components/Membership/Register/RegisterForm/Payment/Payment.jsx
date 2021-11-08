@@ -1,25 +1,25 @@
 import React from "react";
-import {Button, Divider, Typography} from "@material-ui/core";
-import {Elements, CardElement, ElementsConsumer} from "@stripe/react-stripe-js";
-import {loadStripe} from "@stripe/stripe-js";
+// import {Button, Divider, Typography} from "@material-ui/core";
+// import {Elements, CardElement, ElementsConsumer} from "@stripe/react-stripe-js";
+// import {loadStripe} from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+// const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const PaymentForm = ({checkoutToken, backStep, shippingData, onCaptureCheckout, nextStep}) => {
-    const handleSubmit = async (event, elements, stripe) => {
-        event.preventDefault();
+    // const handleSubmit = async (event, elements, stripe) => {
+    //     event.preventDefault();
 
-        if (!stripe || !elements) {
-            return;
-        }
+    //     if (!stripe || !elements) {
+    //         return;
+    //     }
 
-        const cardElement = elements.getElement(CardElement);
+    //     const cardElement = elements.getElement(CardElement);
 
-        const {error, paymentMethod} = await stripe.createPaymentMethod({type: "card", card: cardElement});
+    //     const {error, paymentMethod} = await stripe.createPaymentMethod({type: "card", card: cardElement});
 
-        if (error) {
-            console.log(error);
-        } else {
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
             // const orderData = {
             //     line_items: checkoutToken.live.line_items,
             //     customer: {
@@ -48,8 +48,8 @@ const PaymentForm = ({checkoutToken, backStep, shippingData, onCaptureCheckout, 
 
             // onCaptureCheckout(checkoutToken.id, orderData);
             // nextStep();
-        }
-    }
+    //     }
+    // }
 
     return (
         <div>Payment
