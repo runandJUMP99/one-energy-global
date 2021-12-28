@@ -1,6 +1,6 @@
-import React, {useEffect, useState, Suspense} from "react";
-import {useDispatch} from "react-redux";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import React, { useEffect, useState, Suspense } from "react";
+import { useDispatch } from "react-redux";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import firebaseConfig from "./services/firebase";
 
 import About from "./components/About/About";
@@ -10,13 +10,13 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
-import Membership from "./components/Membership/Membership";
+// import Membership from "./components/Membership/Membership";
 import Modal from "./components/UI/Modal/Modal";
 import Navbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/UI/SideDrawer/SideDrawer";
-import Volunteer from "./components/Volunteer/Volunteer";
+import Internship from "./components/Internship/Internship";
 
-import {authCheckState} from "./store/actions/auth";
+import { authCheckState } from "./store/actions/auth";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -28,7 +28,7 @@ function App() {
 
   function handleShow() {
     setShow(prevValue => !prevValue);
-  };
+  }
 
   return (
     <BrowserRouter>
@@ -44,8 +44,8 @@ function App() {
           <Route path="/account" component={Account} />
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Login} />
-          <Route path="/membership" component={Membership} />
-          <Route path="/volunteer" component={Volunteer} />
+          {/* <Route path="/membership" component={Membership} /> */}
+          <Route path="/internship" component={Internship} />
         </Switch>
       </Suspense>
       <Footer />

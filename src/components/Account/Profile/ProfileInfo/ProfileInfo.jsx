@@ -2,13 +2,13 @@ import React from "react";
 
 import classes from "./ProfileInfo.module.css";
 
-const ProfileInfo = ({currentValue, key, setUpdatedUser, title, type, updatedUser, updating, value}) => {
+const ProfileInfo = ({currentValue, label, setUpdatedUser, title, type, updatedUser, updating, value}) => {
     return (
         <p className={classes.ProfileInfo}>
             <strong>{title}: </strong> 
             {!updating ? currentValue : 
                 <input 
-                    onChange={(event) => setUpdatedUser({...updatedUser, [key]: event.target.value})}
+                    onChange={(event) => setUpdatedUser({...updatedUser, [label]: event.target.value})}
                     placeholder={title}
                     type={type}
                     value={value}
